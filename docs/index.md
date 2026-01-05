@@ -1,6 +1,10 @@
-# The Weight of Your Dependencies
-
-**A Pragmatist's Guide to Software Supply Chain**
+<div class="hero" markdown>
+  <img src="assets/images/server-room-art-deco-hero.webp" alt="Art deco server room illustration">
+  <div class="hero-overlay">
+    <h1>The Weight of Your Dependencies</h1>
+    <p>A Pragmatist's Guide to Software Supply Chain</p>
+  </div>
+</div>
 
 ---
 

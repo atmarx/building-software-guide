@@ -1,0 +1,703 @@
+/* Custom theme colors - Yellow primary */
+:root,
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: #eeaa00;
+  --md-primary-fg-color--light: #ffe066;
+  --md-primary-fg-color--dark: #d4a600;
+  --md-accent-fg-color: #eeaa00;
+  --md-accent-fg-color--transparent: rgba(238, 170, 0, 0.1);
+}
+
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #eeaa00;
+  --md-primary-fg-color--light: #ffe066;
+  --md-primary-fg-color--dark: #d4a600;
+  --md-accent-fg-color: #eeaa00;
+  --md-accent-fg-color--transparent: rgba(238, 170, 0, 0.1);
+}
+
+/* Bitwise terminal font */
+@font-face {
+  font-family: 'Bitwise';
+  src: url('../fonts/bitwise.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Two-column grid cards */
+.md-typeset .grid.cards.two-column {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media screen and (max-width: 600px) {
+  .md-typeset .grid.cards.two-column {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Hero section for homepage */
+.hero {
+  position: relative;
+  margin: -1rem -1rem 2rem -1rem;
+  padding: 0;
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-height: 400px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.4) 60%,
+    transparent 100%
+  );
+  color: white;
+}
+
+.hero-overlay h1 {
+  margin: 0 0 0.5rem 0;
+  font-size: 2rem;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-overlay p {
+  margin: 0;
+  font-size: 1.1rem;
+  opacity: 0.9;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Dark mode adjustments */
+[data-md-color-scheme="slate"] .hero-overlay {
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(0, 0, 0, 0.5) 60%,
+    transparent 100%
+  );
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 76.25em) {
+  .hero {
+    margin: -0.5rem -0.5rem 1.5rem -0.5rem;
+  }
+
+  .hero-overlay {
+    padding: 1.5rem;
+  }
+
+  .hero-overlay h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero img {
+    max-height: 250px;
+  }
+
+  .hero-overlay {
+    padding: 1rem;
+  }
+
+  .hero-overlay h1 {
+    font-size: 1.25rem;
+  }
+
+  .hero-overlay p {
+    font-size: 0.9rem;
+  }
+}
+
+/* ============================================
+   Terminal-style admonitions (VT100 aesthetic)
+   All admonitions use the terminal theme with
+   semantic color variations
+   ============================================ */
+
+/* Base terminal styling for ALL admonitions */
+.md-typeset .admonition,
+.md-typeset details {
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  border-left: 4px solid #eeaa00;
+  border-radius: 4px;
+  box-shadow:
+    inset 0 0 50px rgba(0, 0, 0, 0.5),
+    0 4px 12px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.md-typeset .admonition > .admonition-title,
+.md-typeset details > summary {
+  background-color: #222;
+  border-bottom: 1px solid #333;
+  color: #eeaa00;
+  font-family: 'Bitwise', 'Courier New', monospace;
+  font-size: 1.0rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.md-typeset .admonition > .admonition-title::before,
+.md-typeset details > summary::before {
+  background-color: #eeaa00;
+}
+
+.md-typeset .admonition > p,
+.md-typeset .admonition > ul,
+.md-typeset .admonition > ol,
+.md-typeset .admonition > .tabbed-set,
+.md-typeset details > p,
+.md-typeset details > ul,
+.md-typeset details > ol {
+  color: #eeaa00;
+  font-family: 'IBM Plex Mono', 'Courier New', monospace;
+  font-size: 0.9rem;
+  line-height: 1.8;
+  text-shadow: 0 0 8px rgba(238, 170, 0, 0.4);
+}
+
+/* Links inside admonitions */
+.md-typeset .admonition a,
+.md-typeset details a {
+  color: #00ff88;
+  text-shadow: 0 0 8px rgba(0, 255, 136, 0.4);
+}
+
+.md-typeset .admonition a:hover,
+.md-typeset details a:hover {
+  color: #88ffbb;
+}
+
+/* Emphasis inside admonitions */
+.md-typeset .admonition em,
+.md-typeset details em {
+  color: #ff8800;
+  font-style: normal;
+  text-shadow: 0 0 8px rgba(255, 136, 0, 0.4);
+}
+
+.md-typeset .admonition strong,
+.md-typeset details strong {
+  color: #ffffff;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+}
+
+/* Inline admonitions */
+.md-typeset .admonition.inline,
+.md-typeset .admonition.inline.end {
+  max-width: 45%;
+}
+
+@media screen and (max-width: 600px) {
+  .md-typeset .admonition.inline,
+  .md-typeset .admonition.inline.end {
+    max-width: 100%;
+    float: none;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+/* Subtle scanline effect */
+.md-typeset .admonition::after,
+.md-typeset details::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.1) 0px,
+    rgba(0, 0, 0, 0.1) 1px,
+    transparent 1px,
+    transparent 2px
+  );
+  border-radius: 4px;
+}
+
+/* ============================================
+   Semantic color variations
+   ============================================ */
+
+/* Note / Info - Cyan */
+.md-typeset .admonition.note,
+.md-typeset .admonition.info,
+.md-typeset details.note,
+.md-typeset details.info {
+  border-left-color: #00ffff;
+}
+.md-typeset .admonition.note > .admonition-title,
+.md-typeset .admonition.info > .admonition-title,
+.md-typeset details.note > summary,
+.md-typeset details.info > summary {
+  color: #00ffff;
+}
+.md-typeset .admonition.note > .admonition-title::before,
+.md-typeset .admonition.info > .admonition-title::before,
+.md-typeset details.note > summary::before,
+.md-typeset details.info > summary::before {
+  background-color: #00ffff;
+}
+.md-typeset .admonition.note > p,
+.md-typeset .admonition.note > ul,
+.md-typeset .admonition.note > ol,
+.md-typeset .admonition.info > p,
+.md-typeset .admonition.info > ul,
+.md-typeset .admonition.info > ol,
+.md-typeset details.note > p,
+.md-typeset details.info > p {
+  color: #00ffff;
+  text-shadow: 0 0 8px rgba(0, 255, 255, 0.4);
+}
+
+/* Tip / Success - Green */
+.md-typeset .admonition.tip,
+.md-typeset .admonition.success,
+.md-typeset .admonition.check,
+.md-typeset .admonition.done,
+.md-typeset details.tip,
+.md-typeset details.success {
+  border-left-color: #00ff88;
+}
+.md-typeset .admonition.tip > .admonition-title,
+.md-typeset .admonition.success > .admonition-title,
+.md-typeset .admonition.check > .admonition-title,
+.md-typeset .admonition.done > .admonition-title,
+.md-typeset details.tip > summary,
+.md-typeset details.success > summary {
+  color: #00ff88;
+}
+.md-typeset .admonition.tip > .admonition-title::before,
+.md-typeset .admonition.success > .admonition-title::before,
+.md-typeset .admonition.check > .admonition-title::before,
+.md-typeset .admonition.done > .admonition-title::before,
+.md-typeset details.tip > summary::before,
+.md-typeset details.success > summary::before {
+  background-color: #00ff88;
+}
+.md-typeset .admonition.tip > p,
+.md-typeset .admonition.tip > ul,
+.md-typeset .admonition.tip > ol,
+.md-typeset .admonition.success > p,
+.md-typeset .admonition.success > ul,
+.md-typeset .admonition.success > ol,
+.md-typeset .admonition.check > p,
+.md-typeset .admonition.done > p,
+.md-typeset details.tip > p,
+.md-typeset details.success > p {
+  color: #00ff88;
+  text-shadow: 0 0 8px rgba(0, 255, 136, 0.4);
+}
+
+/* Warning / Caution - Orange */
+.md-typeset .admonition.warning,
+.md-typeset .admonition.caution,
+.md-typeset .admonition.attention,
+.md-typeset details.warning,
+.md-typeset details.caution {
+  border-left-color: #ff8800;
+}
+.md-typeset .admonition.warning > .admonition-title,
+.md-typeset .admonition.caution > .admonition-title,
+.md-typeset .admonition.attention > .admonition-title,
+.md-typeset details.warning > summary,
+.md-typeset details.caution > summary {
+  color: #ff8800;
+}
+.md-typeset .admonition.warning > .admonition-title::before,
+.md-typeset .admonition.caution > .admonition-title::before,
+.md-typeset .admonition.attention > .admonition-title::before,
+.md-typeset details.warning > summary::before,
+.md-typeset details.caution > summary::before {
+  background-color: #ff8800;
+}
+.md-typeset .admonition.warning > p,
+.md-typeset .admonition.warning > ul,
+.md-typeset .admonition.warning > ol,
+.md-typeset .admonition.caution > p,
+.md-typeset .admonition.caution > ul,
+.md-typeset .admonition.caution > ol,
+.md-typeset .admonition.attention > p,
+.md-typeset details.warning > p,
+.md-typeset details.caution > p {
+  color: #ff8800;
+  text-shadow: 0 0 8px rgba(255, 136, 0, 0.4);
+}
+
+/* Danger / Failure - Red */
+.md-typeset .admonition.danger,
+.md-typeset .admonition.failure,
+.md-typeset .admonition.fail,
+.md-typeset .admonition.error,
+.md-typeset details.danger,
+.md-typeset details.failure {
+  border-left-color: #ff4444;
+}
+.md-typeset .admonition.danger > .admonition-title,
+.md-typeset .admonition.failure > .admonition-title,
+.md-typeset .admonition.fail > .admonition-title,
+.md-typeset .admonition.error > .admonition-title,
+.md-typeset details.danger > summary,
+.md-typeset details.failure > summary {
+  color: #ff4444;
+}
+.md-typeset .admonition.danger > .admonition-title::before,
+.md-typeset .admonition.failure > .admonition-title::before,
+.md-typeset .admonition.fail > .admonition-title::before,
+.md-typeset .admonition.error > .admonition-title::before,
+.md-typeset details.danger > summary::before,
+.md-typeset details.failure > summary::before {
+  background-color: #ff4444;
+}
+.md-typeset .admonition.danger > p,
+.md-typeset .admonition.danger > ul,
+.md-typeset .admonition.danger > ol,
+.md-typeset .admonition.failure > p,
+.md-typeset .admonition.failure > ul,
+.md-typeset .admonition.failure > ol,
+.md-typeset .admonition.fail > p,
+.md-typeset .admonition.error > p,
+.md-typeset details.danger > p,
+.md-typeset details.failure > p {
+  color: #ff4444;
+  text-shadow: 0 0 8px rgba(255, 68, 68, 0.4);
+}
+
+/* Example - Purple */
+.md-typeset .admonition.example,
+.md-typeset details.example {
+  border-left-color: #cc88ff;
+}
+.md-typeset .admonition.example > .admonition-title,
+.md-typeset details.example > summary {
+  color: #cc88ff;
+}
+.md-typeset .admonition.example > .admonition-title::before,
+.md-typeset details.example > summary::before {
+  background-color: #cc88ff;
+}
+.md-typeset .admonition.example > p,
+.md-typeset .admonition.example > ul,
+.md-typeset .admonition.example > ol,
+.md-typeset details.example > p {
+  color: #cc88ff;
+  text-shadow: 0 0 8px rgba(204, 136, 255, 0.4);
+}
+
+/* Question / FAQ - Blue */
+.md-typeset .admonition.question,
+.md-typeset .admonition.faq,
+.md-typeset .admonition.help,
+.md-typeset details.question,
+.md-typeset details.faq {
+  border-left-color: #4488ff;
+}
+.md-typeset .admonition.question > .admonition-title,
+.md-typeset .admonition.faq > .admonition-title,
+.md-typeset .admonition.help > .admonition-title,
+.md-typeset details.question > summary,
+.md-typeset details.faq > summary {
+  color: #4488ff;
+}
+.md-typeset .admonition.question > .admonition-title::before,
+.md-typeset .admonition.faq > .admonition-title::before,
+.md-typeset .admonition.help > .admonition-title::before,
+.md-typeset details.question > summary::before,
+.md-typeset details.faq > summary::before {
+  background-color: #4488ff;
+}
+.md-typeset .admonition.question > p,
+.md-typeset .admonition.question > ul,
+.md-typeset .admonition.question > ol,
+.md-typeset .admonition.faq > p,
+.md-typeset .admonition.faq > ul,
+.md-typeset .admonition.faq > ol,
+.md-typeset .admonition.help > p,
+.md-typeset details.question > p,
+.md-typeset details.faq > p {
+  color: #4488ff;
+  text-shadow: 0 0 8px rgba(68, 136, 255, 0.4);
+}
+
+/* Quote / Abstract - Soft white */
+.md-typeset .admonition.quote,
+.md-typeset .admonition.cite,
+.md-typeset .admonition.abstract,
+.md-typeset .admonition.summary,
+.md-typeset .admonition.tldr,
+.md-typeset details.quote,
+.md-typeset details.abstract {
+  border-left-color: #aaaaaa;
+}
+.md-typeset .admonition.quote > .admonition-title,
+.md-typeset .admonition.cite > .admonition-title,
+.md-typeset .admonition.abstract > .admonition-title,
+.md-typeset .admonition.summary > .admonition-title,
+.md-typeset .admonition.tldr > .admonition-title,
+.md-typeset details.quote > summary,
+.md-typeset details.abstract > summary {
+  color: #aaaaaa;
+}
+.md-typeset .admonition.quote > .admonition-title::before,
+.md-typeset .admonition.cite > .admonition-title::before,
+.md-typeset .admonition.abstract > .admonition-title::before,
+.md-typeset .admonition.summary > .admonition-title::before,
+.md-typeset .admonition.tldr > .admonition-title::before,
+.md-typeset details.quote > summary::before,
+.md-typeset details.abstract > summary::before {
+  background-color: #aaaaaa;
+}
+.md-typeset .admonition.quote > p,
+.md-typeset .admonition.quote > ul,
+.md-typeset .admonition.quote > ol,
+.md-typeset .admonition.cite > p,
+.md-typeset .admonition.abstract > p,
+.md-typeset .admonition.abstract > ul,
+.md-typeset .admonition.abstract > ol,
+.md-typeset .admonition.summary > p,
+.md-typeset .admonition.tldr > p,
+.md-typeset details.quote > p,
+.md-typeset details.abstract > p {
+  color: #aaaaaa;
+  text-shadow: 0 0 8px rgba(170, 170, 170, 0.3);
+}
+
+/* Bug - Magenta */
+.md-typeset .admonition.bug,
+.md-typeset details.bug {
+  border-left-color: #ff44aa;
+}
+.md-typeset .admonition.bug > .admonition-title,
+.md-typeset details.bug > summary {
+  color: #ff44aa;
+}
+.md-typeset .admonition.bug > .admonition-title::before,
+.md-typeset details.bug > summary::before {
+  background-color: #ff44aa;
+}
+.md-typeset .admonition.bug > p,
+.md-typeset .admonition.bug > ul,
+.md-typeset .admonition.bug > ol,
+.md-typeset details.bug > p {
+  color: #ff44aa;
+  text-shadow: 0 0 8px rgba(255, 68, 170, 0.4);
+}
+
+/* ============================================
+   Semantic emphasis overrides (strong/links)
+   Each type gets brighter text for bold and
+   complementary colors for links
+   ============================================ */
+
+/* Note / Info - Cyan emphasis */
+.md-typeset .admonition.note strong,
+.md-typeset .admonition.info strong,
+.md-typeset details.note strong,
+.md-typeset details.info strong {
+  color: #88ffff;
+  text-shadow: 0 0 10px rgba(136, 255, 255, 0.5);
+}
+.md-typeset .admonition.note a,
+.md-typeset .admonition.info a,
+.md-typeset details.note a,
+.md-typeset details.info a {
+  color: #ffff00;
+  text-shadow: 0 0 8px rgba(255, 255, 0, 0.4);
+}
+.md-typeset .admonition.note a:hover,
+.md-typeset .admonition.info a:hover,
+.md-typeset details.note a:hover,
+.md-typeset details.info a:hover {
+  color: #ffffaa;
+}
+
+/* Tip / Success - Green emphasis */
+.md-typeset .admonition.tip strong,
+.md-typeset .admonition.success strong,
+.md-typeset .admonition.check strong,
+.md-typeset .admonition.done strong,
+.md-typeset details.tip strong,
+.md-typeset details.success strong {
+  color: #88ffcc;
+  text-shadow: 0 0 10px rgba(136, 255, 204, 0.5);
+}
+.md-typeset .admonition.tip a,
+.md-typeset .admonition.success a,
+.md-typeset .admonition.check a,
+.md-typeset .admonition.done a,
+.md-typeset details.tip a,
+.md-typeset details.success a {
+  color: #ffbb00;
+  text-shadow: 0 0 8px rgba(255, 187, 0, 0.4);
+}
+.md-typeset .admonition.tip a:hover,
+.md-typeset .admonition.success a:hover,
+.md-typeset .admonition.check a:hover,
+.md-typeset .admonition.done a:hover,
+.md-typeset details.tip a:hover,
+.md-typeset details.success a:hover {
+  color: #ffdd66;
+}
+
+/* Warning / Caution - Orange emphasis */
+.md-typeset .admonition.warning strong,
+.md-typeset .admonition.caution strong,
+.md-typeset .admonition.attention strong,
+.md-typeset details.warning strong,
+.md-typeset details.caution strong {
+  color: #ffcc66;
+  text-shadow: 0 0 10px rgba(255, 204, 102, 0.5);
+}
+.md-typeset .admonition.warning a,
+.md-typeset .admonition.caution a,
+.md-typeset .admonition.attention a,
+.md-typeset details.warning a,
+.md-typeset details.caution a {
+  color: #00ccff;
+  text-shadow: 0 0 8px rgba(0, 204, 255, 0.4);
+}
+.md-typeset .admonition.warning a:hover,
+.md-typeset .admonition.caution a:hover,
+.md-typeset .admonition.attention a:hover,
+.md-typeset details.warning a:hover,
+.md-typeset details.caution a:hover {
+  color: #88ddff;
+}
+
+/* Danger / Failure - Red emphasis */
+.md-typeset .admonition.danger strong,
+.md-typeset .admonition.failure strong,
+.md-typeset .admonition.fail strong,
+.md-typeset .admonition.error strong,
+.md-typeset details.danger strong,
+.md-typeset details.failure strong {
+  color: #ff9999;
+  text-shadow: 0 0 10px rgba(255, 153, 153, 0.5);
+}
+.md-typeset .admonition.danger a,
+.md-typeset .admonition.failure a,
+.md-typeset .admonition.fail a,
+.md-typeset .admonition.error a,
+.md-typeset details.danger a,
+.md-typeset details.failure a {
+  color: #00ff88;
+  text-shadow: 0 0 8px rgba(0, 255, 136, 0.4);
+}
+.md-typeset .admonition.danger a:hover,
+.md-typeset .admonition.failure a:hover,
+.md-typeset .admonition.fail a:hover,
+.md-typeset .admonition.error a:hover,
+.md-typeset details.danger a:hover,
+.md-typeset details.failure a:hover {
+  color: #88ffbb;
+}
+
+/* Example - Purple emphasis */
+.md-typeset .admonition.example strong,
+.md-typeset details.example strong {
+  color: #eeccff;
+  text-shadow: 0 0 10px rgba(238, 204, 255, 0.5);
+}
+.md-typeset .admonition.example a,
+.md-typeset details.example a {
+  color: #88ff88;
+  text-shadow: 0 0 8px rgba(136, 255, 136, 0.4);
+}
+.md-typeset .admonition.example a:hover,
+.md-typeset details.example a:hover {
+  color: #bbffbb;
+}
+
+/* Question / FAQ - Blue emphasis */
+.md-typeset .admonition.question strong,
+.md-typeset .admonition.faq strong,
+.md-typeset .admonition.help strong,
+.md-typeset details.question strong,
+.md-typeset details.faq strong {
+  color: #99ccff;
+  text-shadow: 0 0 10px rgba(153, 204, 255, 0.5);
+}
+.md-typeset .admonition.question a,
+.md-typeset .admonition.faq a,
+.md-typeset .admonition.help a,
+.md-typeset details.question a,
+.md-typeset details.faq a {
+  color: #ffaa00;
+  text-shadow: 0 0 8px rgba(255, 170, 0, 0.4);
+}
+.md-typeset .admonition.question a:hover,
+.md-typeset .admonition.faq a:hover,
+.md-typeset .admonition.help a:hover,
+.md-typeset details.question a:hover,
+.md-typeset details.faq a:hover {
+  color: #ffcc66;
+}
+
+/* Quote / Abstract - Gray emphasis */
+.md-typeset .admonition.quote strong,
+.md-typeset .admonition.cite strong,
+.md-typeset .admonition.abstract strong,
+.md-typeset .admonition.summary strong,
+.md-typeset .admonition.tldr strong,
+.md-typeset details.quote strong,
+.md-typeset details.abstract strong {
+  color: #dddddd;
+  text-shadow: 0 0 10px rgba(221, 221, 221, 0.4);
+}
+.md-typeset .admonition.quote a,
+.md-typeset .admonition.cite a,
+.md-typeset .admonition.abstract a,
+.md-typeset .admonition.summary a,
+.md-typeset .admonition.tldr a,
+.md-typeset details.quote a,
+.md-typeset details.abstract a {
+  color: #88ccff;
+  text-shadow: 0 0 8px rgba(136, 204, 255, 0.4);
+}
+.md-typeset .admonition.quote a:hover,
+.md-typeset .admonition.cite a:hover,
+.md-typeset .admonition.abstract a:hover,
+.md-typeset .admonition.summary a:hover,
+.md-typeset .admonition.tldr a:hover,
+.md-typeset details.quote a:hover,
+.md-typeset details.abstract a:hover {
+  color: #bbddff;
+}
+
+/* Bug - Magenta emphasis */
+.md-typeset .admonition.bug strong,
+.md-typeset details.bug strong {
+  color: #ff99cc;
+  text-shadow: 0 0 10px rgba(255, 153, 204, 0.5);
+}
+.md-typeset .admonition.bug a,
+.md-typeset details.bug a {
+  color: #88ff88;
+  text-shadow: 0 0 8px rgba(136, 255, 136, 0.4);
+}
+.md-typeset .admonition.bug a:hover,
+.md-typeset details.bug a:hover {
+  color: #bbffbb;
+}

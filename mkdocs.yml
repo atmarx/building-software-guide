@@ -156,12 +156,16 @@ nav:
 
   - Appendices:
     - appendices/index.md
-    - Node.js/npm: appendices/nodejs.md
+    - Node.js/npm: appendices/node-npm.md
     - Python: appendices/python.md
     - Go: appendices/go.md
     - Rust: appendices/rust.md
     - AI/ML Supply Chain: appendices/ai-ml-supply-chain.md
-    - For Researchers: appendices/researchers.md
+    - For Researchers: appendices/for-researchers.md
+
+# Extra CSS
+extra_css:
+  - assets/stylesheets/custom.css
 
 # Copyright
 copyright: >
