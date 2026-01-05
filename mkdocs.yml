@@ -1,0 +1,168 @@
+site_name: "The Weight of Your Dependencies"
+site_description: "A Pragmatist's Guide to Software Supply Chain"
+site_author: "Andrew Marx"
+site_url: "" # no url yet
+
+# Theme configuration
+theme:
+  name: material
+  language: en
+  
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: sage
+      accent: amber
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: sage
+      accent: amber
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  
+  font:
+    text: Lora
+    code: Fira Code
+  
+  features:
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - navigation.path
+    - toc.follow
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.tabs.link
+    - content.code.copy
+    - content.code.annotate
+    - content.footnote.tooltips
+  
+  icon:
+    repo: fontawesome/brands/github
+  
+  custom_dir: docs/overrides
+
+# Plugins
+plugins:
+  - search:
+      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+  - minify:
+      minify_html: true
+
+# Markdown extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - tables
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.blocks.caption
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  - pymdownx.snippets:
+      auto_append:
+        - includes/glossary.md
+
+# Navigation
+nav:
+  - Home: index.md
+  - Foreword: foreword.md
+  - Preface: preface.md
+
+  - Concepts:
+    - concepts/index.md
+    - The True Cost of Free: concepts/true-cost-of-free.md
+    - When Scripts Become Software: concepts/scripts-become-software.md
+    - Understanding Risk: concepts/understanding-risk.md
+    - Evaluating Dependencies: concepts/evaluating-dependencies.md
+    - Versioning and Lock Files: concepts/versioning-and-lockfiles.md
+    - The Build Environment: concepts/build-environment.md
+
+  - Security:
+    - security/index.md
+    - The Software Supply Chain: security/supply-chain.md
+    - Software Bills of Materials: security/sbom.md
+    - Vulnerability Management: security/vulnerability-management.md
+    - Secrets Management: security/secrets-management.md
+    - Supply Chain Security Practices: security/security-practices.md
+    - Research Data Security: security/research-data.md
+
+  - Practices:
+    - practices/index.md
+    - Choosing Frameworks: practices/choosing-frameworks.md
+    - Configuration Management: practices/configuration-management.md
+    - Development Practices: practices/development-practices.md
+    - Reproducibility: practices/reproducibility.md
+    - Publishing Your Code: practices/publishing-your-code.md
+
+  - Lessons Learned:
+    - lessons-learned/index.md
+    - The Classics:
+      - left-pad: lessons-learned/left-pad.md
+      - event-stream: lessons-learned/event-stream.md
+      - colors.js: lessons-learned/colors-js.md
+    - The Vulnerabilities:
+      - log4shell: lessons-learned/log4shell.md
+      - xz utils: lessons-learned/xz-utils.md
+      - SolarWinds: lessons-learned/solarwinds.md
+    - Ongoing Threats:
+      - Typosquatting: lessons-learned/typosquatting.md
+      - Dependency Confusion: lessons-learned/dependency-confusion.md
+
+  - Reference:
+    - reference/index.md
+    - Checklists: reference/checklists.md
+    - Tools: reference/tools.md
+    - Glossary: reference/glossary.md
+    - Further Reading: reference/further-reading.md
+    - Sources: reference/sources.md
+
+  - Appendices:
+    - appendices/index.md
+    - Node.js/npm: appendices/nodejs.md
+    - Python: appendices/python.md
+    - Go: appendices/go.md
+    - Rust: appendices/rust.md
+    - AI/ML Supply Chain: appendices/ai-ml-supply-chain.md
+    - For Researchers: appendices/researchers.md
+
+# Copyright
+copyright: >
+  <a href="https://creativecommons.org/licenses/by-nc/4.0/">© 2026 Andrew Marx — CC BY-NC 4.0</a>

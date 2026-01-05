@@ -1,0 +1,11 @@
+# MkDocs dependencies
+# Install with: pip install -r requirements.txt
+#
+# Versions pinned to avoid breaking changes from untested updates.
+# Update versions manually after testing with: pip install --upgrade <package>
+# Then update this file to match.
+#
+# Last tested: January 2026
+
+mkdocs-material==9.7.1
+mkdocs-minify-plugin==0.8.0
