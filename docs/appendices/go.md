@@ -2,6 +2,9 @@
 
 Go's module system is refreshingly simple compared to other ecosystems. This appendix covers Go's approach to dependency management.
 
+!!! terminal "Refreshingly Boring"
+    Go's dependency management is refreshingly boring. I mean that as praise. One tool (go mod). One lock file (go.sum). Checksums verified against a public database. Minimal version selection that's actually deterministic. After years of npm and pip chaos, Go feels like someone thought through the problem before shipping a solution. It's not perfect, but it's remarkably hard to shoot yourself in the foot.
+
 ---
 
 ## Go Modules

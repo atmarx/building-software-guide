@@ -2,6 +2,9 @@
 
 **The Lesson:** Trust is transitive. Even careful projects can be compromised through patient social engineering.
 
+!!! terminal "Years of Patience"
+    This one still keeps me up at night. The attacker spent *years* building trust. Legitimate contributions. Helpful responses. And all the while, they were waiting for the right moment to insert a backdoor into SSH infrastructure across the internet. They almost succeeded.
+
 ---
 
 ## What Happened
@@ -65,19 +68,16 @@ The xz incident intensified conversations that log4shell had started:
 
 **Single-maintainer projects are systemic risk.** Critical infrastructure depending on overwhelmed volunteers isn't just a sustainability problem—it's a security problem.
 
-## The Graybeard's Take
+!!! terminal "The Proof"
+    I've been saying for years that maintainer burnout is a security issue. Here's the proof.
 
-I've been saying for years that maintainer burnout is a security issue. Here's the proof.
+    What the xz attackers understood—and what the industry is still learning—is that open source trust models assume good faith. They work remarkably well when that assumption holds. But they have no defense against patient, sophisticated adversaries willing to invest years in building trust.
 
-What the xz attackers understood—and what the industry is still learning—is that open source trust models assume good faith. They work remarkably well when that assumption holds. But they have no defense against patient, sophisticated adversaries willing to invest years in building trust.
+    Jia Tan didn't break into anything. They were given the keys. By a maintainer who was overwhelmed, under pressure, and trying to do the right thing by accepting help.
 
-Jia Tan didn't break into anything. They were given the keys. By a maintainer who was overwhelmed, under pressure, and trying to do the right thing by accepting help.
+    The hardest part of this incident isn't the technical remediation. It's the question it raises: Who can you trust? The answer used to be "the maintainers." Now it's "the maintainers, probably, if they haven't been pressured into adding someone they shouldn't trust." That's not a good answer.
 
-The hardest part of this incident isn't the technical remediation. It's the question it raises: Who can you trust? The answer used to be "the maintainers." Now it's "the maintainers, probably, if they haven't been pressured into adding someone they shouldn't trust." That's not a good answer.
-
-We need better answers. Better funding for critical infrastructure. Better tooling for provenance and build verification. Better support for maintainers so they're not vulnerable to social engineering.
-
-But mostly, we need to stop being surprised when the systems we build on trust are compromised by people who abuse trust. That's not a bug in the model. It's a feature that adversaries can exploit.
+    We need better answers. Better funding for critical infrastructure. Better tooling for provenance and build verification. Better support for maintainers so they're not vulnerable to social engineering. But mostly, we need to stop being surprised when the systems we build on trust are compromised by people who abuse trust. That's not a bug in the model. It's a feature that adversaries can exploit.
 
 ---
 
@@ -96,7 +96,7 @@ But mostly, we need to stop being surprised when the systems we build on trust a
 
 ---
 
-[^xz-oss-security]: See [xz Utils Backdoor](../reference/sources.md#xz-utils-backdoor)
+[^xz-oss-security]: See [xz Utils Backdoor](../reference/sources.md#xz-utils)
 
 [^xz-analysis]: See [xz Utils Backdoor Analysis](../reference/sources.md#xz-utils-analysis)
 

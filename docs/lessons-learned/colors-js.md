@@ -2,6 +2,9 @@
 
 **The Lesson:** Maintainers are people with grievances. "Trusted" packages can become hostile.
 
+!!! terminal "People, Not Code"
+    Software is written by people. People get tired, frustrated, burned out. People sometimes act out. Your supply chain isn't just code—it's all the humans behind that code, with everything that implies.
+
 ---
 
 ## What Happened
@@ -64,17 +67,14 @@ The colors.js incident accelerated several trends:
 
 **Some sympathy, some condemnation.** The open source community was divided. Some saw Squires as a burned-out maintainer making a legitimate protest. Others saw him as violating the implicit contract of open source. The debate continues.
 
-## The Graybeard's Take
+!!! terminal "Norms Aren't Enforceable"
+    I've felt what Squires felt. Not the acting-out part—but the frustration of watching your work used by companies that could write you a check without noticing the expense, and don't.
 
-I've felt what Squires felt. Not the acting-out part—but the frustration of watching your work used by companies that could write you a check without noticing the expense, and don't.
+    Open source runs on norms. Maintainers publish good code because that's what maintainers do. Companies use it because it's there. The system works remarkably well most of the time, because most people follow the norms.
 
-Open source runs on norms. Maintainers publish good code because that's what maintainers do. Companies use it because it's there. The system works remarkably well most of the time, because most people follow the norms.
+    But norms aren't enforceable. When someone decides to stop following them—whether out of malice, frustration, or protest—the system has few defenses. You can revert the package, ban the user, write new policies. But you can't make someone care about your build pipeline.
 
-But norms aren't enforceable. When someone decides to stop following them—whether out of malice, frustration, or protest—the system has few defenses. You can revert the package, ban the user, write new policies. But you can't make someone care about your build pipeline.
-
-The lesson isn't that Squires was right or wrong. It's that **your dependencies are maintained by people**, with all the unpredictability that implies. If your business depends on software that a single frustrated person can break, that's a risk you're carrying. Most organizations don't account for it.
-
-Pin your versions. Know your critical dependencies. And maybe—just maybe—find a way to support the people who maintain them.
+    The lesson isn't that Squires was right or wrong. It's that **your dependencies are maintained by people**, with all the unpredictability that implies. If your business depends on software that a single frustrated person can break, that's a risk you're carrying. Pin your versions. Know your critical dependencies. And maybe—just maybe—find a way to support the people who maintain them.
 
 ---
 

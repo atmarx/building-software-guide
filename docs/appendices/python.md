@@ -2,6 +2,9 @@
 
 Python's packaging ecosystem is notoriously fragmented. This appendix cuts through the confusion with practical guidance on managing Python dependencies.
 
+!!! terminal "Always About to Be Fixed"
+    Python packaging has been "about to be fixed" for my entire career. pip, virtualenv, pipenv, poetry, pdm, uv—I've switched tools three times and each migration was painful. The good news: it's actually getting better. uv is fast, pyproject.toml is standard, and the chaos is converging. The bad news: there's still a decade of contradictory advice out there. This is what actually works.
+
 ---
 
 ## The Python Packaging Landscape

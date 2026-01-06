@@ -2,6 +2,9 @@
 
 Resources for deeper exploration beyond this guide.
 
+!!! terminal "Standing on Shoulders"
+    These resources shaped how I think about software supply chains. Some are old. Old doesn't mean wrong—it often means battle-tested. The specific tools in these books may be dated, but the principles hold. Read the thinking, not just the commands.
+
 ---
 
 ## Books
@@ -136,7 +139,7 @@ https://dl.acm.org/
 
 **Open Source Licensing Guide**
 Companion guide covering software licensing fundamentals.
-[Open Source Licensing Guide](licensing-guide)
+[Open Source Licensing Guide](https://libre.xram.net)
 
 ---
 

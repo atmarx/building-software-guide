@@ -2,6 +2,9 @@
 
 Reference guide to tools for dependency management, security scanning, and supply chain hygiene. This isn't exhaustive—it covers commonly used, well-maintained options.
 
+!!! terminal "Tools Change"
+    I've used different versions of every tool category here. Names change, companies get acquired, projects get abandoned. The specific tools matter less than having *a* tool and using it consistently. Pick one that works for your ecosystem, learn it well, and don't chase every new shiny thing.
+
 ---
 
 ## Dependency Analysis

@@ -2,6 +2,9 @@
 
 Rust's Cargo is often cited as one of the best package managers in any ecosystem. This appendix covers Cargo's dependency management, security features, and best practices.
 
+!!! terminal "What Others Should Learn From"
+    Cargo is what I wish every package manager looked like. Build, test, publish, dependency management—all in one tool that just works. cargo-audit for security, cargo-deny for policy, workspaces for monorepos. The Rust community took notes on what other ecosystems got wrong and designed something better. If you're starting a new language ecosystem, study Cargo.
+
 ---
 
 ## Cargo Fundamentals

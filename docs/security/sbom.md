@@ -2,6 +2,9 @@
 
 An SBOM is an inventory of everything in your software—every component, every version, every dependency. It's the answer to "what are we running?" and it needs to be answerable in minutes, not days.
 
+!!! terminal "The Weekend Question"
+    When log4shell dropped, every security team asked the same question: "Are we affected?" The teams that could answer in hours had SBOMs. The teams that needed weeks didn't. Which team do you want to be on when the next critical vulnerability drops?
+
 ---
 
 ## What Is an SBOM?
@@ -43,7 +46,7 @@ Every component has a license. Some licenses (GPL, AGPL) have implications for h
 - Do any conflict with our distribution model?
 - Are we meeting attribution requirements?
 
-For licensing details, see the [Open Source Licensing Guide](licensing-guide).
+For licensing details, see the [Open Source Licensing Guide](https://libre.xram.net).
 
 ### Supply Chain Visibility
 
@@ -273,15 +276,14 @@ When a CVE drops, you need SBOMs fast:
 
 "Where is log4j 2.14.1 running?" should be answerable with a query, not an investigation.
 
-## The Graybeard's Take
+!!! terminal "Boring Work"
+    I've been through enough fire drills to know: the organizations that handle incidents well are the ones that did the boring work beforehand.
 
-I've been through enough fire drills to know: the organizations that handle incidents well are the ones that did the boring work beforehand.
+    When log4shell hit, I watched two types of responses. The first type had asset inventories, SBOMs, and vulnerability scanning. They spent the weekend patching. The second type spent the weekend figuring out what they were running. Some of them are probably still figuring it out.
 
-When log4shell hit, I watched two types of responses. The first type had asset inventories, SBOMs, and vulnerability scanning. They spent the weekend patching. The second type spent the weekend figuring out what they were running. Some of them are probably still figuring it out.
+    SBOMs aren't exciting. Generating them isn't glamorous. Nobody gets promoted for having a complete software inventory. But when the next log4shell drops—and it will—the teams with SBOMs will sleep while the teams without them scramble.
 
-SBOMs aren't exciting. Generating them isn't glamorous. Nobody gets promoted for having a complete software inventory. But when the next log4shell drops—and it will—the teams with SBOMs will sleep while the teams without them scramble.
-
-The best time to generate your first SBOM was before you needed it. The second best time is now.
+    The best time to generate your first SBOM was before you needed it. The second best time is now.
 
 ---
 

@@ -4,15 +4,39 @@ Concepts explain the *why*. Security explains the *what to defend against*. This
 
 ## What's Here
 
-**[Choosing Frameworks](choosing-frameworks.md)** — Frameworks can accelerate development or trap you in someone else's opinions. This chapter helps you evaluate whether a framework is worth adopting, and how to escape when it isn't.
+<div class="grid cards two-column" markdown>
 
-**[Configuration Management](configuration-management.md)** — Hardcoded values, environment variables, config files, secrets stores. This chapter covers the spectrum of configuration approaches and when to use each—from the simplest script to production deployment.
+-   :material-puzzle:{ .lg .middle } **[Choosing Frameworks](choosing-frameworks.md)**
 
-**[Development Practices](development-practices.md)** — Version control hygiene, CI/CD fundamentals, testing philosophy, and documentation as code. The baseline practices that make everything else easier.
+    ---
 
-**[Reproducibility](reproducibility.md)** — "It works for me" isn't good enough—especially in research. This chapter covers the layers of reproducibility and practical approaches to achieving them.
+    Frameworks can accelerate development or trap you in someone else's opinions. How to evaluate and escape.
 
-**[Publishing Your Code](publishing-your-code.md)** — When you release your work—whether to a journal, GitHub, or a package registry—you become a dependency for others. This chapter covers how to be a responsible publisher: security policies, versioning, documentation, and making your code consumable.
+-   :material-cog:{ .lg .middle } **[Configuration Management](configuration-management.md)**
+
+    ---
+
+    Hardcoded values, environment variables, config files, secrets stores. The spectrum of approaches.
+
+-   :material-source-branch:{ .lg .middle } **[Development Practices](development-practices.md)**
+
+    ---
+
+    Version control hygiene, CI/CD fundamentals, testing philosophy, and documentation as code.
+
+-   :material-repeat:{ .lg .middle } **[Reproducibility](reproducibility.md)**
+
+    ---
+
+    "It works for me" isn't good enough—especially in research. Layers of reproducibility and how to achieve them.
+
+-   :material-package-variant:{ .lg .middle } **[Publishing Your Code](publishing-your-code.md)**
+
+    ---
+
+    When you release your work, you become a dependency for others. How to be a responsible publisher.
+
+</div>
 
 ## The Researcher's Reality
 

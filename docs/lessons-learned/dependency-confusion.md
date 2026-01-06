@@ -2,6 +2,9 @@
 
 **The Lesson:** If your internal package names exist on public registries, someone else can publish malicious code under those names.
 
+!!! terminal "Elegant and Terrible"
+    This attack was elegant. Birsan didn't break in—he exploited assumptions nobody questioned. Package managers checking multiple registries? Feature. Higher versions winning? Feature. Internal names not protected? Oversight nobody noticed. He earned $130,000 by asking "what if?" about default behavior. That's the worst kind of vulnerability: the one that's not a bug.
+
 ---
 
 ## What It Is
@@ -114,17 +117,14 @@ Watch public registries for packages matching your internal names. Some security
 
 Block or alert on unexpected outbound connections from build systems. If your build suddenly reaches out to PyPI when it should only talk to your private registry, that's a red flag.
 
-## The Graybeard's Take
+!!! terminal "Unquestioned Assumptions"
+    Dependency confusion is clever because it exploits trust assumptions nobody questioned.
 
-Dependency confusion is clever because it exploits trust assumptions nobody questioned.
+    Package managers were designed when "installing a package" meant downloading from one central place. Private registries were bolted on later. The resolution logic wasn't designed for a world where multiple sources might have the same package name with different contents.
 
-Package managers were designed when "installing a package" meant downloading from one central place. Private registries were bolted on later. The resolution logic wasn't designed for a world where multiple sources might have the same package name with different contents.
+    Birsan's research was a wake-up call. Suddenly, every organization with internal packages had to ask: could someone guess these names? Is our resolver configured correctly? What happens if there's a version conflict?
 
-Birsan's research was a wake-up call. Suddenly, every organization with internal packages had to ask: could someone guess these names? Is our resolver configured correctly? What happens if there's a version conflict?
-
-The fix is straightforward—use namespaces, configure your package manager correctly, don't trust default behavior. But lots of organizations learned these lessons the hard way.
-
-If you have internal packages, audit your resolver configuration. Today. Before someone else discovers what names you're using.
+    The fix is straightforward—use namespaces, configure your package manager correctly, don't trust default behavior. But lots of organizations learned these lessons the hard way. If you have internal packages, audit your resolver configuration. Today. Before someone else discovers what names you're using.
 
 ---
 

@@ -2,6 +2,9 @@
 
 Actionable checklists for common supply chain tasks. Print these, bookmark them, integrate them into your workflow.
 
+!!! terminal "Because We Forget"
+    Checklists exist because I've forgotten every single item on them at least once. Smart people make dumb mistakes under pressure. Checklists are how you stop making the same mistakes repeatedly. I don't trust my memory anymore—I trust the checklist.
+
 ---
 
 ## New Dependency Checklist
@@ -11,7 +14,7 @@ Before adding a new dependency to your project:
 - [ ] **Searched for alternatives** — Is there a simpler solution? Could you write this yourself in reasonable time?
 - [ ] **Checked maintenance status** — When was the last commit? Are issues being addressed? What's the bus factor?
 - [ ] **Reviewed dependency tree** — What transitive dependencies come with this? How deep is the tree?
-- [ ] **Verified license compatibility** — Is the license compatible with your project? (See [Licensing Guide](licensing-guide))
+- [ ] **Verified license compatibility** — Is the license compatible with your project? (See [Licensing Guide](https://libre.xram.net))
 - [ ] **Assessed security posture** — Does the project have a security policy? Any recent CVEs? How were they handled?
 - [ ] **Checked download counts / adoption** — Is this widely used, or an obscure package?
 - [ ] **Documented rationale** — Why this package? What alternatives were considered?

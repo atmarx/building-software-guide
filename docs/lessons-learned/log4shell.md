@@ -2,6 +2,9 @@
 
 **The Lesson:** You need to know what you're running. When a critical vulnerability drops, "are we affected?" must be answerable in minutes.
 
+!!! terminal "December 2021"
+    I watched this unfold in real time. The frantic pings, the all-hands calls, the dawning horror as organizations realized they had no idea where Log4j was running. Billion-dollar companies. Government agencies. All asking the same question: "Are we affected?" Most couldn't answer.
+
 ---
 
 ## What Happened
@@ -54,17 +57,14 @@ Log4shell became a forcing function for supply chain security investment:
 
 **Java ecosystem practices evolved.** The Log4j maintainers—volunteers maintaining critical infrastructure in their spare time—had been requesting resources for years. Log4shell made visible what had been true all along: critical software was running on minimal support.
 
-## The Graybeard's Take
+!!! terminal "That Week"
+    I remember the week log4shell dropped. The frantic Slack messages. The weekend work. The spreadsheets of "things that might be running Java."
 
-I remember the week log4shell dropped. The frantic Slack messages. The weekend work. The spreadsheets of "things that might be running Java."
+    What struck me wasn't the vulnerability itself—critical bugs happen. It was watching organizations realize they had no idea what was running in their own environments. Billion-dollar companies, government agencies, hospitals—all discovering that a library they'd never heard of was embedded in systems they thought they understood.
 
-What struck me wasn't the vulnerability itself—critical bugs happen. It was watching organizations realize they had no idea what was running in their own environments. Billion-dollar companies, government agencies, hospitals—all discovering that a library they'd never heard of was embedded in systems they thought they understood.
+    The teams that handled it well had something in common: they'd done the boring work beforehand. Asset inventories. Dependency manifests. SBOMs. They could grep a list instead of guessing.
 
-The teams that handled it well had something in common: they'd done the boring work beforehand. Asset inventories. Dependency manifests. SBOMs. They could grep a list instead of guessing.
-
-The teams that struggled had a different thing in common: they'd assumed someone else was handling it. The vendor. The framework. The cloud provider. Anybody but them.
-
-The vulnerability wasn't in Log4j. The vulnerability was in not knowing what you're running.
+    The teams that struggled had a different thing in common: they'd assumed someone else was handling it. The vendor. The framework. The cloud provider. Anybody but them. The vulnerability wasn't in Log4j. The vulnerability was in not knowing what you're running.
 
 ---
 
@@ -84,7 +84,7 @@ The vulnerability wasn't in Log4j. The vulnerability was in not knowing what you
 
 [^log4shell-cve]: NIST. "CVE-2021-44228 Detail." National Vulnerability Database. December 2021. https://nvd.nist.gov/vuln/detail/CVE-2021-44228
 
-[^log4shell-nist]: See [log4shell Vulnerability](../reference/sources.md#log4shell-vulnerability)
+[^log4shell-nist]: See [log4shell Vulnerability](../reference/sources.md#log4shell)
 
 [^log4shell-cisa]: See [log4shell CISA Advisory](../reference/sources.md#log4shell-cisa)
 

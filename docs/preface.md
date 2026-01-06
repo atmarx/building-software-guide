@@ -2,7 +2,7 @@
 
 ## About the Voice
 
-I've been writing software since before "open source" had a name. I learned vi on a VT100 because that's what was available. I've watched build systems come and go—make, ant, maven, gradle, webpack, and whatever we're using next year. I remember when "dependency management" meant tarring up vendor libraries and hoping you remembered which versions you'd grabbed.
+I've been writing software since before "open source" had a name. I learned `vi` on a VT100 because that's what was available. I've watched build systems come and go—make, ant, maven, gradle, webpack, and whatever we're using next year. I remember when "dependency management" meant tarring up vendor libraries and hoping you remembered which versions you'd grabbed.
 
 I've seen the same mistakes made across decades, just with different tools. The patterns don't change. Someone picks a framework without understanding it. Someone adds a dependency without reading it. Someone copies a configuration from Stack Overflow and runs it in production. The tools change, but the failures don't.
 
@@ -32,7 +32,7 @@ This guide is about making the invisible visible. Not to scare you, but to infor
 
 This guide is foundational. It explains the *why* and *what* of software supply chain management. It doesn't tell you how to configure Kubernetes or submit jobs to Slurm—that's what the practical guides are for. But before you follow any of those guides, you should understand what you're building on.
 
-If you're working with open source software—and if you're writing code, you are—you should also read the companion [Open Source Licensing Guide](licensing-guide). Understanding licenses is part of understanding your supply chain. When licensing questions arise in this guide, we'll cross-reference rather than duplicate.
+If you're working with open source software—and if you're writing code, you are—you should also read the companion [Open Source Licensing Guide](https://libre.xram.net). Understanding licenses is part of understanding your supply chain. When licensing questions arise in this guide, we'll cross-reference rather than duplicate.
 
 ## How to Read This Guide
 

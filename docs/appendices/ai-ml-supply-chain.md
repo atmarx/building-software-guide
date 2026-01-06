@@ -2,6 +2,9 @@
 
 Machine learning adds new dimensions to the supply chain: models, datasets, training pipelines, and inference frameworks. Each is a dependency that can fail, be compromised, or disappear.
 
+!!! terminal "Downloading Weights from Strangers"
+    You're downloading model weights from strangers on the internet and running them on your machine. Think about that for a moment. That Hugging Face model could have been trained on anything by anyone. Pickle files can execute arbitrary code. Datasets might contain poisoned examples designed to create backdoors. ML supply chain is the Wild West—all the software supply chain problems plus entirely new categories of risk.
+
 ---
 
 ## The ML Dependency Stack
@@ -379,13 +382,8 @@ training:
   duration_hours: 4
 ```
 
-## The Graybeard's Take
-
-ML supply chain is the Wild West. Models downloaded from Hugging Face could have been trained on anything by anyone. Datasets might contain copyrighted material, private data, or deliberately poisoned examples. The frameworks themselves have security vulnerabilities like any other software.
-
-The difference is that ML failures are often silent. A poisoned model still produces outputs—just wrong ones for certain inputs. A biased dataset produces a biased model that seems to work fine until it doesn't.
-
-Treat ML artifacts with the same skepticism you'd apply to running code from the internet—because that's exactly what they are. Verify provenance. Pin versions. Document everything. When you deploy a model, you're responsible for its behavior, regardless of who trained it.
+!!! terminal "Silent Failures"
+    ML failures are often silent. A poisoned model still produces outputs—just wrong ones for certain inputs. A biased dataset produces a biased model that seems to work fine until it doesn't. You won't get an error message. You'll get wrong answers that look plausible. Treat ML artifacts with the same skepticism you'd apply to running code from the internet—because that's exactly what they are.
 
 ---
 

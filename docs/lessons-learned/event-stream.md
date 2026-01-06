@@ -2,6 +2,9 @@
 
 **The Lesson:** Trust doesn't transfer automatically. Maintainer handoffs are security events.
 
+!!! terminal "They Asked Politely"
+    The attacker didn't hack anything. They didn't exploit a vulnerability. They sent a polite email offering to help, and they waited. Patience is a weapon.
+
 ---
 
 ## What Happened
@@ -59,17 +62,14 @@ The event-stream incident sparked several changes:
 
 **The conversation about sustainability grew louder.** Tarr's candid admission—"I don't get anything from maintaining this module"[^tarr-statement]—put a human face on the maintainer burnout problem. Organizations started asking harder questions about who maintains the software they depend on.
 
-## The Graybeard's Take
+!!! terminal "Given the Keys"
+    I can't blame Tarr. I've done exactly what he did, more times than I can count. Someone offers to help with a project you no longer have time for. You're grateful. You give them access. What's the alternative—keep ignoring pull requests until the project dies?
 
-I can't blame Tarr. I've done exactly what he did, more times than I can count. Someone offers to help with a project you no longer have time for. You're grateful. You give them access. What's the alternative—keep ignoring pull requests until the project dies?
+    The system assumes maintainers will vet their successors carefully. But maintainers are volunteers, often burned out, often maintaining dozens of packages. They're not security teams. They're people trying to be helpful. The attacker understood this perfectly. They didn't hack anything. They asked politely. And they waited.
 
-The system assumes maintainers will vet their successors carefully. But maintainers are volunteers, often burned out, often maintaining dozens of packages. They're not security teams. They're people trying to be helpful.
+    The lesson isn't "don't trust anyone." The lesson is: **maintainer transitions are security events**. They should be noticed, logged, and considered in your risk assessment. When the person controlling a package changes, your trust model should update.
 
-The attacker understood this perfectly. They didn't hack anything. They asked politely. And they waited.
-
-The lesson isn't "don't trust anyone." The lesson is: **maintainer transitions are security events**. They should be noticed, logged, and considered in your risk assessment. When the person controlling a package changes, your trust model should update.
-
-But right now, most organizations have no idea who maintains their dependencies, let alone when that changes. We're trusting by default, and attackers know it.
+    But right now, most organizations have no idea who maintains their dependencies, let alone when that changes. We're trusting by default, and attackers know it.
 
 ---
 

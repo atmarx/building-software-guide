@@ -2,6 +2,9 @@
 
 API keys in notebooks. Database passwords in config files. AWS credentials in git history. This chapter is about not doing those things—and cleaning up when you do.
 
+!!! terminal "They're Already Looking"
+    The number of credentials I've found in git histories would make you cry. Bots scan every public commit within seconds. Private repos get leaked. "I'll fix it later" becomes "I've been mining crypto on your AWS account for three weeks." Assume any secret that touches a repo is compromised.
+
 ---
 
 ## What Counts as a Secret?
@@ -358,15 +361,14 @@ os.environ['API_KEY'] = input('API Key: ')  # Prompts, doesn't save
 
 Tools like `jupyter-credentialstore` can manage secrets separately from notebooks.
 
-## The Graybeard's Take
+!!! terminal "Just This Once"
+    I've seen production databases get dropped because someone committed credentials and a bot found them faster than the developer could delete the commit. I've seen AWS bills in the tens of thousands from cryptominers using leaked keys.
 
-I've seen production databases get dropped because someone committed credentials and a bot found them faster than the developer could delete the commit. I've seen AWS bills in the tens of thousands from cryptominers using leaked keys.
+    The pattern is always the same: convenience over security, just this once, just for testing. And then "just for testing" becomes "how we've always done it" until the breach.
 
-The pattern is always the same: convenience over security, just this once, just for testing. And then "just for testing" becomes "how we've always done it" until the breach.
+    Secrets management isn't hard once you have the habit. Use environment variables at minimum. Use a secrets manager if you can. Add pre-commit hooks to catch mistakes. Assume any secret that touches git is compromised.
 
-Secrets management isn't hard once you have the habit. Use environment variables at minimum. Use a secrets manager if you can. Add pre-commit hooks to catch mistakes. Assume any secret that touches git is compromised.
-
-The five minutes you spend setting up proper secrets handling saves the five days you'd spend rotating every credential after a leak.
+    The five minutes you spend setting up proper secrets handling saves the five days you'd spend rotating every credential after a leak.
 
 ---
 

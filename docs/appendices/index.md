@@ -2,23 +2,58 @@
 
 Ecosystem-specific guidance and special topics that don't fit neatly into the main chapters.
 
+!!! terminal "Same Problems, Different Syntax"
+    Different ecosystems, same problems. I've worked in all of these. The tools change—npm, pip, cargo, go get—but the underlying challenges don't. Lock your dependencies. Scan for vulnerabilities. Know what you're running. The syntax is different; the discipline is the same.
+
 ## Ecosystem Guides
 
-Different languages and package managers have different conventions, tools, and pitfalls. These guides cover the specifics:
+Different languages and package managers have different conventions, tools, and pitfalls.
 
-- **[Node.js/npm](nodejs.md)** — Lock files, npm audit, provenance and signing, the npm ecosystem's particular challenges.
+<div class="grid cards two-column" markdown>
 
-- **[Python](python.md)** — pip vs. pip-tools vs. Poetry vs. uv, virtual environments, the fragmented Python packaging landscape.
+-   :material-nodejs:{ .lg .middle } **[Node.js/npm](node-npm.md)**
 
-- **[Go](go.md)** — The module system, vendoring, go.sum verification, Go's distinctive approach.
+    ---
 
-- **[Rust](rust.md)** — Cargo.lock handling, the crates.io trust model, build determinism.
+    Lock files, npm audit, provenance and signing, the npm ecosystem's particular challenges.
+
+-   :material-language-python:{ .lg .middle } **[Python](python.md)**
+
+    ---
+
+    pip vs. pip-tools vs. Poetry vs. uv, virtual environments, the fragmented packaging landscape.
+
+-   :material-language-go:{ .lg .middle } **[Go](go.md)**
+
+    ---
+
+    The module system, vendoring, go.sum verification, Go's distinctive approach.
+
+-   :material-language-rust:{ .lg .middle } **[Rust](rust.md)**
+
+    ---
+
+    Cargo.lock handling, the crates.io trust model, build determinism.
+
+</div>
 
 ## Special Topics
 
-- **[AI/ML Supply Chain](ai-ml-supply-chain.md)** — Pre-trained models are dependencies too. Model provenance, dataset licensing, Hugging Face trust model, pickle deserialization risks, and the emerging challenges of ML supply chain.
+<div class="grid cards two-column" markdown>
 
-- **[For Researchers](researchers.md)** — Reproducible research software, working solo, grant-funded software sustainability, and the particular challenges of academic code.
+-   :material-robot:{ .lg .middle } **[AI/ML Supply Chain](ai-ml-supply-chain.md)**
+
+    ---
+
+    Pre-trained models are dependencies too. Model provenance, dataset licensing, pickle risks, and ML supply chain challenges.
+
+-   :material-flask:{ .lg .middle } **[For Researchers](for-researchers.md)**
+
+    ---
+
+    Reproducible research software, working solo, grant-funded sustainability, and academic code challenges.
+
+</div>
 
 ## A Note on Ecosystem Guides
 

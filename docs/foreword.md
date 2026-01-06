@@ -42,7 +42,7 @@ There's something fitting about using AI to write about software supply chains. 
 
 ## Companion Guide
 
-This guide has a sibling: the [Open Source Licensing Guide](licensing-guide), which covers the licensing fundamentals that underpin much of what we discuss here. If you're working with open source software—and if you're reading this, you are—understanding licenses is part of understanding your supply chain.
+This guide has a sibling: the [Open Source Licensing Guide](https://libre.xram.net), which covers the licensing fundamentals that underpin much of what we discuss here. If you're working with open source software—and if you're reading this, you are—understanding licenses is part of understanding your supply chain.
 
 ## License
 

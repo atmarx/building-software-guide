@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <!-- Open arc (like @ symbol) - gap in upper right where tail exits -->
+  <path d="M 83 31 A 38 38 0 1 0 69 17" fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round"/>
+
+  <!-- X with extended upper-right arm forming the @ tail -->
+  <!-- Lower-left to upper-right diagonal (extends out to form tail) -->
+  <line x1="28" y1="72" x2="92" y2="8" stroke="currentColor" stroke-width="8" stroke-linecap="round"/>
+
+  <!-- Upper-left to lower-right diagonal -->
+  <line x1="28" y1="28" x2="72" y2="72" stroke="currentColor" stroke-width="8" stroke-linecap="round"/>
+</svg>

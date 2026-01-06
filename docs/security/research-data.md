@@ -2,6 +2,9 @@
 
 When your code touches sensitive data—research subjects, medical records, proprietary information—the stakes change. A dependency vulnerability becomes a potential data breach. A misconfigured environment becomes a compliance violation. This chapter covers the practices that protect research data.
 
+!!! terminal "Careers End Here"
+    I've seen research projects shut down and careers damaged over data handling mistakes. Not malice—just someone who didn't understand what they were holding. Research data security isn't bureaucracy. It's respect for the people who trusted you with their information.
+
 ---
 
 ## Data Classification
@@ -329,19 +332,14 @@ For shared JupyterHub environments:
 - **Audit logging:** Track user activity
 - **Network isolation:** Limit what notebooks can connect to
 
-## The Graybeard's Take
+!!! terminal "Trust Has to Mean Something"
+    I've seen research projects shut down over data handling violations. Not because of malicious intent—because someone emailed a spreadsheet, or left a notebook running with production credentials, or demoed with real patient data.
 
-I've seen research projects shut down over data handling violations. Not because of malicious intent—because someone emailed a spreadsheet, or left a notebook running with production credentials, or demoed with real patient data.
+    The researchers weren't careless. They were focused on their science. Data security wasn't part of their training. It wasn't in their grant proposal. It wasn't what they were being evaluated on. But it's still their responsibility. And when something goes wrong, "I didn't know" isn't an acceptable answer.
 
-The researchers weren't careless. They were focused on their science. Data security wasn't part of their training. It wasn't in their grant proposal. It wasn't what they were being evaluated on.
+    The practices in this chapter aren't about checking compliance boxes. They're about building habits that protect the people whose data you're using. Those research subjects trusted you with their information. That trust has to mean something.
 
-But it's still their responsibility. And when something goes wrong, "I didn't know" isn't an acceptable answer.
-
-The practices in this chapter aren't about checking compliance boxes. They're about building habits that protect the people whose data you're using. Those research subjects trusted you with their information. That trust has to mean something.
-
-Use synthetic data for development. Keep production data in production. Know who's accessing what. And when you're not sure if something is appropriate, ask.
-
-The inconvenience of doing this right is nothing compared to the consequences of doing it wrong.
+    Use synthetic data for development. Keep production data in production. Know who's accessing what. And when you're not sure if something is appropriate, ask. The inconvenience of doing this right is nothing compared to the consequences of doing it wrong.
 
 ---
 

@@ -6,17 +6,45 @@ This section covers supply chain security: the attacks that target it, the tools
 
 ## What's Here
 
-**[The Software Supply Chain](supply-chain.md)** — What "supply chain" means in software, why it's a target, and how attacks actually work. Understanding the threat model is the first step to defending against it.
+<div class="grid cards two-column" markdown>
 
-**[Software Bills of Materials](sbom.md)** — An SBOM is an inventory of everything in your software. When a vulnerability is announced, it lets you answer "are we affected?" in minutes instead of days. This chapter covers what SBOMs are, why they matter, and how to create them.
+-   :material-link-variant:{ .lg .middle } **[The Software Supply Chain](supply-chain.md)**
 
-**[Vulnerability Management](vulnerability-management.md)** — Vulnerabilities are inevitable. What matters is how you find them, assess them, and respond. This chapter covers vulnerability databases, scanning tools, and response workflows.
+    ---
 
-**[Secrets Management](secrets-management.md)** — API keys in notebooks. Credentials in git history. `.env` files committed by accident. This chapter covers how to handle secrets properly—and how to clean up when you don't.
+    What "supply chain" means in software, why it's a target, and how attacks actually work.
 
-**[Supply Chain Security Practices](security-practices.md)** — Practical defenses: dependency update strategies, artifact signing, SLSA compliance, and repository security. The habits that reduce risk over time.
+-   :material-format-list-checks:{ .lg .middle } **[Software Bills of Materials](sbom.md)**
 
-**[Research Data Security](research-data.md)** — When your code touches sensitive data—research subjects, medical records, proprietary information—the stakes change. This chapter covers data handling practices, environment separation, logging and audit trails, and the particular challenges researchers face.
+    ---
+
+    An SBOM is an inventory of everything in your software. Answer "are we affected?" in minutes instead of days.
+
+-   :material-bug-outline:{ .lg .middle } **[Vulnerability Management](vulnerability-management.md)**
+
+    ---
+
+    Vulnerabilities are inevitable. What matters is how you find them, assess them, and respond.
+
+-   :material-key-variant:{ .lg .middle } **[Secrets Management](secrets-management.md)**
+
+    ---
+
+    API keys in notebooks. Credentials in git history. How to handle secrets properly—and clean up when you don't.
+
+-   :material-shield-check:{ .lg .middle } **[Supply Chain Security Practices](security-practices.md)**
+
+    ---
+
+    Practical defenses: dependency updates, artifact signing, SLSA compliance, and repository security.
+
+-   :material-database-lock:{ .lg .middle } **[Research Data Security](research-data.md)**
+
+    ---
+
+    When your code touches sensitive data, the stakes change. Data handling, environment separation, and audit trails.
+
+</div>
 
 ## Why This Matters
 
@@ -44,5 +72,5 @@ If you read nothing else in this section:
 
 6. **Protect your data** — Research data security isn't optional. Know what you're handling and protect it appropriately.
 
-[^log4shell]: See [log4shell Vulnerability](../reference/sources.md#log4shell-vulnerability)
-[^xz-utils]: See [xz Utils Backdoor](../reference/sources.md#xz-utils-backdoor)
+[^log4shell]: See [log4shell Vulnerability](../reference/sources.md#log4shell)
+[^xz-utils]: See [xz Utils Backdoor](../reference/sources.md#xz-utils)

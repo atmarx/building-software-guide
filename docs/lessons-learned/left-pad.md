@@ -2,6 +2,9 @@
 
 **The Lesson:** Transitive dependencies are invisible risk. Trivial code still has dependency weight.
 
+!!! terminal "Invisible Weight"
+    Nobody thinks about their dependencies' dependencies. Until all of those invisible assumptions suddenly become visible at the worst possible moment.
+
 ---
 
 ## What Happened
@@ -55,17 +58,14 @@ The incident also sparked conversations about:
 - **Vendoring and caching** — Should your builds depend on external registries being available?
 - **Lock files** — At least know *which* versions you depend on, so you can debug when things break.
 
-## The Graybeard's Take
+!!! terminal "Eleven Lines"
+    I've watched this pattern before. Not with npm specifically—the ecosystem didn't exist when I started—but the dynamic is old.
 
-I've watched this pattern before. Not with npm specifically—the ecosystem didn't exist when I started—but the dynamic is old.
+    Every time a platform makes sharing easy, people share too much. Every time adding a dependency is frictionless, people add too many. And every time someone asks "should I really depend on this?", the answer comes back "why not, it's free."
 
-Every time a platform makes sharing easy, people share too much. Every time adding a dependency is frictionless, people add too many. And every time someone asks "should I really depend on this?", the answer comes back "why not, it's free."
+    Except it's not free. You're trusting unknown code, written by unknown people, maintained on their schedule, available at their discretion. When Koçulu unpublished his packages, he was within his rights. The ecosystem just assumed he wouldn't.
 
-Except it's not free. You're trusting unknown code, written by unknown people, maintained on their schedule, available at their discretion. When Koçulu unpublished his packages, he was within his rights. The ecosystem just assumed he wouldn't.
-
-The lesson isn't "don't use dependencies." That ship sailed decades ago. The lesson is: **know what you're depending on, and have a plan for when it disappears.**
-
-Eleven lines of code. That's all it took.
+    The lesson isn't "don't use dependencies." That ship sailed decades ago. The lesson is: **know what you're depending on, and have a plan for when it disappears.** Eleven lines of code. That's all it took.
 
 ---
 
@@ -82,7 +82,7 @@ Eleven lines of code. That's all it took.
 
 [^koculu-medium]: Koçulu, Azer. "I've Just Liberated My Modules." Medium. March 2016. (Original post has been deleted; archived versions available.)
 
-[^register-left-pad]: See [left-pad Incident](../reference/sources.md#left-pad-incident)
+[^register-left-pad]: See [left-pad Incident](../reference/sources.md#left-pad)
 
 [^npmjs-left-pad]: npm download statistics, archived March 2016.
 

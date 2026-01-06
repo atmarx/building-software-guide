@@ -2,33 +2,80 @@
 
 Abstract risks become real when you see what happens when things go wrong. This section collects case studies of supply chain failures—what happened, why it mattered, and what the industry learned.
 
+!!! terminal "I Was There"
+    I've watched most of these unfold in real time. The panicked Slack messages. The "are we affected?" scramble. The 2 AM dependency audits. Reading about incidents in a textbook is one thing. Living through them teaches you differently. These aren't hypotheticals—they're why I check my dependencies.
+
 ## The Classics
 
 Early incidents that shaped how we think about dependency management.
 
-- **[left-pad](left-pad.md)** (2016) — One developer unpublished an 11-line package. Builds broke across the internet. The lesson: transitive dependencies are invisible risk.
+<div class="grid cards two-column" markdown>
 
-- **[event-stream](event-stream.md)** (2018) — A maintainer handed off a popular package to a helpful stranger. The stranger added code targeting a specific Bitcoin wallet. The lesson: trust doesn't transfer automatically.
+-   :material-package-variant-remove:{ .lg .middle } **[left-pad](left-pad.md)** (2016)
 
-- **[colors.js](colors-js.md)** (2022) — A frustrated maintainer intentionally corrupted their own packages. Thousands of applications broke. The lesson: maintainers are people with grievances.
+    ---
+
+    One developer unpublished an 11-line package. Builds broke across the internet. *Lesson: transitive dependencies are invisible risk.*
+
+-   :material-account-switch:{ .lg .middle } **[event-stream](event-stream.md)** (2018)
+
+    ---
+
+    A maintainer handed off a popular package to a helpful stranger who added malicious code. *Lesson: trust doesn't transfer automatically.*
+
+-   :material-emoticon-angry:{ .lg .middle } **[colors.js](colors-js.md)** (2022)
+
+    ---
+
+    A frustrated maintainer intentionally corrupted their own packages. *Lesson: maintainers are people with grievances.*
+
+</div>
 
 ## The Vulnerabilities
 
 Critical security incidents that demonstrated the stakes.
 
-- **[log4shell](log4shell.md)** (2021) — A critical vulnerability in one of the most widely-used Java libraries. Trivial to exploit, devastating in impact. The lesson: you need to know what you're running.
+<div class="grid cards two-column" markdown>
 
-- **[xz utils](xz-utils.md)** (2024) — A multi-year social engineering campaign to backdoor SSH authentication. The attacker became a trusted maintainer. The lesson: even careful projects can be compromised.
+-   :material-fire:{ .lg .middle } **[log4shell](log4shell.md)** (2021)
 
-- **[SolarWinds](solarwinds.md)** (2020) — Attackers compromised a build system, inserting malware into legitimate software updates. 18,000 organizations affected. The lesson: build systems are high-value targets.
+    ---
+
+    A critical vulnerability in one of the most widely-used Java libraries. Trivial to exploit, devastating in impact. *Lesson: you need to know what you're running.*
+
+-   :material-incognito:{ .lg .middle } **[xz utils](xz-utils.md)** (2024)
+
+    ---
+
+    A multi-year social engineering campaign to backdoor SSH authentication. *Lesson: even careful projects can be compromised.*
+
+-   :material-cloud-alert:{ .lg .middle } **[SolarWinds](solarwinds.md)** (2020)
+
+    ---
+
+    Attackers compromised a build system, inserting malware into legitimate updates. 18,000 organizations affected. *Lesson: build systems are high-value targets.*
+
+</div>
 
 ## Ongoing Threats
 
 Attack patterns that continue to evolve.
 
-- **[Typosquatting](typosquatting.md)** — Malicious packages with names similar to popular ones. `lodash` vs `1odash`. Detection has improved but remains imperfect.
+<div class="grid cards two-column" markdown>
 
-- **[Dependency Confusion](dependency-confusion.md)** — Internal package names that match public registry names. Build systems pull from the wrong source. Organizations now need explicit policies.
+-   :material-keyboard:{ .lg .middle } **[Typosquatting](typosquatting.md)**
+
+    ---
+
+    Malicious packages with names similar to popular ones. `lodash` vs `1odash`. Detection has improved but remains imperfect.
+
+-   :material-swap-horizontal:{ .lg .middle } **[Dependency Confusion](dependency-confusion.md)**
+
+    ---
+
+    Internal package names that match public registry names. Build systems pull from the wrong source.
+
+</div>
 
 ## Common Threads
 

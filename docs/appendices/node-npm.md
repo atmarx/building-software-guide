@@ -2,6 +2,9 @@
 
 Node.js and npm form one of the largest software ecosystems. This appendix covers npm-specific dependency management, security practices, and common pitfalls.
 
+!!! terminal "Beautiful Chaos"
+    npm is chaos. Beautiful, productive chaos. Two million packages. Anyone can publish. left-pad and event-stream happened here. But also: incredible velocity, a package for everything, and an ecosystem that moves faster than any other. You just have to be careful. `npm ci`, audit religiously, and know what you're installing.
+
 ---
 
 ## The npm Ecosystem

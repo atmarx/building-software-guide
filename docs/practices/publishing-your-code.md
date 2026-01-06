@@ -2,6 +2,9 @@
 
 You've written code. Now others might use it. This chapter covers what happens when your code goes from "works for me" to "works for everyone"—the responsibilities, the patterns, and the pitfalls.
 
+!!! terminal "Other People's Problems"
+    Publishing code is how you become responsible for other people's problems. Their builds will break when you push a breaking change. Their security depends on your maintenance. "No warranty" doesn't mean no responsibility—it just means no legal responsibility. The moral weight remains.
+
 ---
 
 ## Why Publish?
@@ -102,7 +105,7 @@ project/
 
 The first thing users see. Make it count.
 
-```markdown
+~~~markdown
 # Project Name
 
 One-sentence description of what this does.
@@ -123,16 +126,16 @@ result = main_function(input_data)
 
 ## Documentation
 
-[Full documentation](https://your-docs-site.com)
+Full documentation: https://your-docs-site.com
 
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md)
+See CONTRIBUTING.md for contribution guidelines.
 
 ## License
 
-MIT License - see [LICENSE](LICENSE)
-```
+MIT License - see LICENSE file for details.
+~~~
 
 ### CHANGELOG.md
 
@@ -454,15 +457,14 @@ npm unpublish your-package@1.0.0
 
 Note: Unpublishing is disruptive. Users' builds will break. Consider publishing a fixed version instead when possible.
 
-## The Graybeard's Take
+!!! terminal "A Promise"
+    Publishing code is making a promise. Even if you say "no warranty," users will depend on you. Their builds will break when you break things. Their security posture depends on your security practices.
 
-Publishing code is making a promise. Even if you say "no warranty," users will depend on you. Their builds will break when you break things. Their security posture depends on your security practices.
+    This doesn't mean don't publish. It means publish intentionally. If you're sharing code for reproducibility, make that clear—"this code accompanies Paper X, it's not a general-purpose library." If you're publishing a library, commit to the maintenance it requires.
 
-This doesn't mean don't publish. It means publish intentionally. If you're sharing code for reproducibility, make that clear—"this code accompanies Paper X, it's not a general-purpose library." If you're publishing a library, commit to the maintenance it requires.
+    The worst outcome is publishing something that gains users, then abandoning it. Those users are stuck with unmaintained code, frozen dependencies, accumulating vulnerabilities. Either maintain it or be explicit that you won't.
 
-The worst outcome is publishing something that gains users, then abandoning it. Those users are stuck with unmaintained code, frozen dependencies, accumulating vulnerabilities. Either maintain it or be explicit that you won't.
-
-Publishing can be tremendously valuable—for you, for the community, for the advancement of knowledge. Just go in with eyes open about what you're signing up for.
+    Publishing can be tremendously valuable—for you, for the community, for the advancement of knowledge. Just go in with eyes open about what you're signing up for.
 
 ---
 

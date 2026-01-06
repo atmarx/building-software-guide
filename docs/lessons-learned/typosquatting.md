@@ -2,6 +2,9 @@
 
 **The Lesson:** A single typo can compromise your system. Package names aren't verified for legitimacy.
 
+!!! terminal "Almost Got Me"
+    I've almost installed the wrong package. More than once. `reqeusts` instead of `requests`. `djang0` instead of `django`. The difference between "Tuesday" and "incident response" is proofreading your install commands. And before you feel superior—so have you. You just didn't notice.
+
 ---
 
 ## What It Is
@@ -80,15 +83,12 @@ These help but aren't comprehensive. Registries see millions of packages and can
 
 **Dependency scanning.** Tools like Snyk and Socket can flag suspicious packages.
 
-## The Graybeard's Take
+!!! terminal "Five Seconds"
+    Typosquatting is embarrassingly effective. You'd think we'd have solved it by now—fuzzy matching isn't hard. But registries optimize for openness (anyone can publish) over safety (verify you're not impersonating someone).
 
-Typosquatting is embarrassingly effective. You'd think we'd have solved it by now—fuzzy matching isn't hard. But registries optimize for openness (anyone can publish) over safety (verify you're not impersonating someone).
+    I've watched this attack vector for years, and the pattern doesn't change. Someone registers `electorn` or `djang0`, waits for the typos to roll in, and harvests whatever they can. Sometimes it's cryptocurrency miners. Sometimes it's credential theft. Sometimes it's just reconnaissance for a bigger attack.
 
-I've watched this attack vector for years, and the pattern doesn't change. Someone registers `electorn` or `djang0`, waits for the typos to roll in, and harvests whatever they can. Sometimes it's cryptocurrency miners. Sometimes it's credential theft. Sometimes it's just reconnaissance for a bigger attack.
-
-The defense isn't sophisticated. It's attention. Read what you're typing. Read what you're installing. Take the extra five seconds to verify.
-
-But we're all in a hurry. And that's what the attackers count on.
+    The defense isn't sophisticated. It's attention. Read what you're typing. Read what you're installing. Take the extra five seconds to verify. But we're all in a hurry. And that's what the attackers count on.
 
 ---
 

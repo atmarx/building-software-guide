@@ -2,6 +2,9 @@
 
 Knowing the threats isn't enough. This chapter covers the practical habits that reduce risk over time—dependency updates, artifact signing, and the security practices that become second nature.
 
+!!! terminal "The Boring Part"
+    Updates are the most boring security practice. That's why they matter most. Nobody gets excited about bumping patch versions. But the teams I've seen handle incidents well are the ones who do the boring work consistently. Security isn't a heroic act—it's a thousand small habits.
+
 ---
 
 ## Dependency Update Strategies
@@ -314,17 +317,14 @@ Private registries give you:
 - [ ] Anomaly detection on dependencies
 - [ ] Regular security audits
 
-## The Graybeard's Take
+!!! terminal "Habits, Not Projects"
+    Security practices are habits, not projects. You don't "do security" once—you build it into how you work.
 
-Security practices are habits, not projects. You don't "do security" once—you build it into how you work.
+    The teams I've seen handle incidents well have these habits deeply embedded. Lock files are always committed. Vulnerability scans run on every PR. Updates happen on a predictable cadence. When something goes wrong, they're responding from a position of knowledge, not scrambling to figure out what they're even running.
 
-The teams I've seen handle incidents well have these habits deeply embedded. Lock files are always committed. Vulnerability scans run on every PR. Updates happen on a predictable cadence. When something goes wrong, they're responding from a position of knowledge, not scrambling to figure out what they're even running.
+    The teams that struggle treat security as an obstacle. They disable scanning because it's noisy. They skip lock files because they're confusing. They defer updates because they might break things.
 
-The teams that struggle treat security as an obstacle. They disable scanning because it's noisy. They skip lock files because they're confusing. They defer updates because they might break things.
-
-Both teams eventually face the same incidents. One is prepared. One isn't.
-
-Build the habits now, before you need them.
+    Both teams eventually face the same incidents. One is prepared. One isn't. Build the habits now, before you need them.
 
 ---
 

@@ -2,6 +2,9 @@
 
 Terms used throughout this guide. Most of these also appear as tooltips when you hover over them in the text.
 
+!!! terminal "Say What You Mean"
+    I've sat through too many meetings where people used the same words to mean different things. "We need to update the dependencies"—which ones? "There's a vulnerability"—in what? Jargon can illuminate or obscure. This is what these terms mean when I use them.
+
 ---
 
 ## A
@@ -103,4 +106,4 @@ Copying dependency source code directly into your project rather than fetching f
 
 ## Adding Terms
 
-This glossary covers terms specific to this guide. For licensing terminology, see the [Open Source Licensing Guide](licensing-guide) glossary.
+This glossary covers terms specific to this guide. For licensing terminology, see the [Open Source Licensing Guide](https://libre.xram.net) glossary.

@@ -2,6 +2,9 @@
 
 **The Lesson:** Build systems are high-value targets. Signed artifacts can still be malicious if the build is compromised.
 
+!!! terminal "The Update You Trusted"
+    They didn't break in through your firewall. They came in through the update you installed—signed, verified, from your trusted vendor. The signature was real. The malware was too. That's what makes supply chain attacks terrifying.
+
 ---
 
 ## What Happened
@@ -68,25 +71,16 @@ SolarWinds accelerated supply chain security from a niche concern to a mainstrea
 
 **Zero trust architecture.** The assumption that signed software from trusted vendors is safe was directly challenged. Organizations began implementing zero trust principles that don't assume any source is inherently trustworthy.
 
-## The Graybeard's Take
+!!! terminal "It Got Real"
+    I remember when supply chain attacks were theoretical. Conference talks would describe them, and audiences would nod thoughtfully, then go back to worrying about SQL injection and phishing.
 
-I remember when supply chain attacks were theoretical. Conference talks would describe them, and audiences would nod thoughtfully, then go back to worrying about SQL injection and phishing.
+    SolarWinds made supply chain attacks real in a way nothing else had. Not because they're new—they're not—but because the scale and sophistication were undeniable. Nation-state actors, critical infrastructure, a year of undetected access.
 
-SolarWinds made supply chain attacks real in a way nothing else had. Not because they're new—they're not—but because the scale and sophistication were undeniable. Nation-state actors, critical infrastructure, a year of undetected access.
+    The uncomfortable truth is that most organizations can't defend against a SolarWinds-level attack. They don't have the resources to verify every update from every vendor. They trust their vendors because the alternative is trusting nobody, which means building everything themselves.
 
-The uncomfortable truth is that most organizations can't defend against a SolarWinds-level attack. They don't have the resources to verify every update from every vendor. They don't have air-gapped build systems with reproducible builds and multi-party approval. They trust their vendors because the alternative is trusting nobody, which means building everything themselves.
+    What you *can* do is: know your software supply chain, segment and monitor even trusted software, demand transparency from vendors, and plan for compromise. Assume that something in your supply chain is already compromised. What would you do?
 
-What you *can* do is:
-
-1. **Know your software supply chain.** Which vendors have access to your network? What do they update, how often, with what privileges?
-
-2. **Segment and monitor.** Even trusted software shouldn't have unlimited network access. Anomaly detection might catch the next SUNBURST.
-
-3. **Demand transparency.** Ask vendors about their build processes, their SBOM practices, their security audits. The good ones will have answers.
-
-4. **Plan for compromise.** Assume that something in your supply chain is already compromised. What would you do? How would you detect it? How would you contain it?
-
-The attackers are patient. They're funded. They're good at this. The least we can do is make it harder.
+    The attackers are patient. They're funded. They're good at this. The least we can do is make it harder.
 
 ---
 
