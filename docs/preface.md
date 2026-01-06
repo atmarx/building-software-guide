@@ -1,4 +1,13 @@
-# Preface
+---
+title: Preface
+---
+
+<div class="hero hero-half" markdown>
+  <img src="../assets/images/narrator-hero.webp" alt="Art deco illustration of our virtual narrator">
+  <div class="hero-overlay">
+    <h1>Preface</h1>
+  </div>
+</div>
 
 !!! terminal ""
 
