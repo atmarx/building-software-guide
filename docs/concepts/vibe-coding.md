@@ -1,4 +1,9 @@
-# Vibe Coding
+<div class="hero hero-half" markdown>
+  <img src="../../assets/images/vibe-coding.webp" alt="Art deco figure at terminal with shadows writing code">
+  <div class="hero-overlay">
+    <h1>Vibe Coding</h1>
+  </div>
+</div>
 
 When AI writes your code, you inherit dependencies you didn't choose, patterns you don't understand, and risks you can't see.
 

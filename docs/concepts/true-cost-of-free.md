@@ -1,4 +1,9 @@
-# The True Cost of Free
+<div class="hero hero-half" markdown>
+  <img src="../../assets/images/cost-of-free.webp" alt="Art deco gift box casting long shadow of fine print">
+  <div class="hero-overlay">
+    <h1>The True Cost of Free</h1>
+  </div>
+</div>
 
 That library you just installed? It's not free. It costs evaluation time, maintenance effort, security surface area, and upgrade cycles. Understanding these costs helps you make better decisions about what to depend on.
 

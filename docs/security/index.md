@@ -1,4 +1,9 @@
-# Security
+<div class="hero hero-half" markdown>
+  <img src="../assets/images/security.webp" alt="Art deco vault door with radiating golden lines">
+  <div class="hero-overlay">
+    <h1>Security</h1>
+  </div>
+</div>
 
 Your code doesn't exist in isolation. It depends on other code, written by people you've never met, maintained by volunteers who might disappear tomorrow. Any link in that chain can be compromised—and you inherit the security posture of every dependency, whether you know it or not.
 

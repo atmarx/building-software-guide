@@ -1,4 +1,9 @@
-# The Software Supply Chain
+<div class="hero hero-half" markdown>
+  <img src="../../assets/images/supply-chain.webp" alt="Art deco train station with infinite branching tracks">
+  <div class="hero-overlay">
+    <h1>The Software Supply Chain</h1>
+  </div>
+</div>
 
 Every piece of software you run is built on other software. Libraries, frameworks, tools, runtimes—layers upon layers of code written by people you've never met. This is your software supply chain, and understanding it is the first step to securing it.
 

@@ -1,4 +1,9 @@
-# When Scripts Become Software
+<div class="hero hero-half" markdown>
+  <img src="../../assets/images/scripts-become-software.webp" alt="Art deco seed growing into mechanical tree">
+  <div class="hero-overlay">
+    <h1>When Scripts Become Software</h1>
+  </div>
+</div>
 
 That "quick script" you wrote last month? It's now critical infrastructure. This chapter addresses the research reality: code written to answer a question becomes code that must be maintained, reproduced, and trusted.
 

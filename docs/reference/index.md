@@ -1,4 +1,10 @@
-# Reference
+<div class="hero hero-half" markdown>
+  <img src="../assets/images/reference.webp" alt="Art deco blueprint room with technical drawings">
+  <div class="hero-overlay">
+    <h1>Reference</h1>
+  </div>
+</div>
+
 
 Quick-access resources for when you need to look something up.
 

@@ -3,7 +3,9 @@
     "allow": [
       "Bash(tree:*)",
       "Bash(mkdocs build:*)",
-      "Bash(grep:*)"
+      "Bash(grep:*)",
+      "Bash(cwebp:*)",
+      "Bash(ls:*)"
     ]
   }
 }

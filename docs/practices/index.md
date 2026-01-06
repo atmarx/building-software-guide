@@ -1,4 +1,9 @@
-# Practices
+<div class="hero hero-half" markdown>
+  <img src="../assets/images/practices.webp" alt="Art deco workshop with elegant tools">
+  <div class="hero-overlay">
+    <h1>Practices</h1>
+  </div>
+</div>
 
 Concepts explain the *why*. Security explains the *what to defend against*. This section explains the *how*—the practical habits and approaches that reduce risk without making your work impossible.
 

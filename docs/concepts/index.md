@@ -1,4 +1,9 @@
-# Concepts
+<div class="hero hero-half" markdown>
+  <img src="../assets/images/concepts.webp" alt="Art deco library with glowing orbs">
+  <div class="hero-overlay">
+    <h1>Concepts</h1>
+  </div>
+</div>
 
 Before you can make informed decisions about dependencies and supply chain, you need to understand what you're actually dealing with. This section covers the foundational concepts that everything else builds on.
 
