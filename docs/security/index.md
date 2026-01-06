@@ -1,3 +1,7 @@
+---
+title: Security
+---
+
 <div class="hero hero-half" markdown>
   <img src="../assets/images/security.webp" alt="Art deco vault door with radiating golden lines">
   <div class="hero-overlay">

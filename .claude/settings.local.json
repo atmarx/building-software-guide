@@ -5,7 +5,15 @@
       "Bash(mkdocs build:*)",
       "Bash(grep:*)",
       "Bash(cwebp:*)",
-      "Bash(ls:*)"
+      "Bash(ls:*)",
+      "Bash(for f in /home/xram/Code/buildingsoftware/docs/**/*.md)",
+      "Bash(do)",
+      "Bash(if ! grep -q '^---' \"$f\")",
+      "Bash(! grep -q '^# ' \"$f\")",
+      "Bash(then)",
+      "Bash(echo:*)",
+      "Bash(fi)",
+      "Bash(done)"
     ]
   }
 }

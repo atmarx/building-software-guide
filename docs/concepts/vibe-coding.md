@@ -1,3 +1,7 @@
+---
+title: Vibe Coding
+---
+
 <div class="hero hero-half" markdown>
   <img src="../../assets/images/vibe-coding.webp" alt="Art deco figure at terminal with shadows writing code">
   <div class="hero-overlay">

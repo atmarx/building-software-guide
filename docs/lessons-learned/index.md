@@ -1,3 +1,7 @@
+---
+title: Lessons Learned
+---
+
 <div class="hero hero-half" markdown>
   <img src="../assets/images/lessons-learned.webp" alt="Art deco archaeological dig revealing buried machinery">
   <div class="hero-overlay">

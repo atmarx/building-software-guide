@@ -1,3 +1,7 @@
+---
+title: Appendices
+---
+
 <div class="hero hero-half" markdown>
   <img src="../assets/images/appendices.webp" alt="Art deco blueprint room with technical drawings">
   <div class="hero-overlay">

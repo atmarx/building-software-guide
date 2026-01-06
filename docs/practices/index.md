@@ -1,3 +1,7 @@
+---
+title: Practices
+---
+
 <div class="hero hero-half" markdown>
   <img src="../assets/images/practices.webp" alt="Art deco workshop with elegant tools">
   <div class="hero-overlay">

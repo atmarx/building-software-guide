@@ -1,3 +1,7 @@
+---
+title: The True Cost of Free
+---
+
 <div class="hero hero-half" markdown>
   <img src="../../assets/images/cost-of-free.webp" alt="Art deco gift box casting long shadow of fine print">
   <div class="hero-overlay">

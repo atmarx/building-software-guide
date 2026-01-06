@@ -1,3 +1,7 @@
+---
+title: Home
+---
+
 <div class="hero" markdown>
   <img src="assets/images/building-tower.webp" alt="Art deco server room illustration">
   <div class="hero-overlay">

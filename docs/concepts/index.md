@@ -1,3 +1,7 @@
+---
+title: Concepts
+---
+
 <div class="hero hero-half" markdown>
   <img src="../assets/images/concepts.webp" alt="Art deco library with glowing orbs">
   <div class="hero-overlay">
