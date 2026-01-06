@@ -1,7 +1,7 @@
 site_name: "The Weight of Your Dependencies"
 site_description: "A Pragmatist's Guide to Software Supply Chain"
 site_author: "Andrew Marx"
-site_url: "" # no url yet
+site_url: "https://build.xram.net"
 
 # Theme configuration
 theme:
@@ -47,7 +47,7 @@ theme:
   icon:
     repo: fontawesome/brands/github
 
-  logo: assets/images/xram-logo.svg
+  logo: assets/images/x-200.png
 
   custom_dir: docs/overrides
 
@@ -174,3 +174,16 @@ extra_css:
 # Copyright
 copyright: >
   <a href="https://creativecommons.org/licenses/by-nc/4.0/">© 2026 Andrew Marx — CC BY-NC 4.0</a>
+
+# Footer social links
+extra:
+  social:
+    - icon: fontawesome/solid/user
+      link: https://xram.net
+      name: xram.net
+    - icon: fontawesome/brands/github
+      link: https://github.com/atmarx/building-software-guide
+      name: Source on GitHub
+    - icon: fontawesome/solid/mug-hot
+      link: https://buymeacoffee.com/atmarx
+      name: Buy me a coffee

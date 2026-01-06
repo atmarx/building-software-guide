@@ -1,7 +1,7 @@
 /* Custom theme colors - Yellow primary */
 :root,
 [data-md-color-scheme="default"] {
-  --md-primary-fg-color: #eeaa00;
+  --md-primary-fg-color: #dd9900;
   --md-primary-fg-color--light: #ffe066;
   --md-primary-fg-color--dark: #d4a600;
   --md-accent-fg-color: #eeaa00;
@@ -9,7 +9,7 @@
 }
 
 [data-md-color-scheme="slate"] {
-  --md-primary-fg-color: #eeaa00;
+  --md-primary-fg-color: #db9d00;
   --md-primary-fg-color--light: #ffe066;
   --md-primary-fg-color--dark: #d4a600;
   --md-accent-fg-color: #eeaa00;
@@ -23,6 +23,12 @@
   font-weight: normal;
   font-style: normal;
   font-display: swap;
+}
+
+/* Logo sizing - overflow header without changing height */
+.md-header__button.md-logo img {
+  height: 2.5rem;
+  margin: -0.5rem 0;
 }
 
 /* Two-column grid cards */
