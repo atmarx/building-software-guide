@@ -2,6 +2,9 @@
 
 Version numbers mean something (sometimes). Lock files ensure reproducibility (when you use them). This chapter explains how versioning works, why lock files matter, and how to avoid the common pitfalls.
 
+!!! terminal "Aspirational Spec"
+    Semver is a promise that everyone makes and nobody keeps perfectly. I've seen "minor" releases that broke production. I've seen "patches" that changed behavior in subtle, infuriating ways. The version number tells you what the maintainer *intended*. Reality requires verification.
+
 ---
 
 ## Semantic Versioning: The Promise
@@ -301,17 +304,14 @@ Instead of vendoring, consider:
 - **Artifact storage** — Store built artifacts alongside code
 - **Reproducible builds** — Verify you can rebuild from source
 
-## The Graybeard's Take
+!!! terminal "Not a Prayer"
+    I've debugged enough "it works on my machine" problems to have strong opinions about lock files.
 
-I've debugged enough "it works on my machine" problems to have strong opinions about lock files.
+    The pattern is always the same. Developer A writes code. It works. Developer B clones the repo. It doesn't work. Hours of debugging later, someone notices: different dependency versions.
 
-The pattern is always the same. Developer A writes code. It works. Developer B clones the repo. It doesn't work. Hours of debugging later, someone notices: different dependency versions.
+    Without lock files, you're not sharing a project—you're sharing a wish. "I hope you get the same versions I had." That's not engineering. That's prayer. AI-assisted coding makes this worse—the AI generates code with imports but no lock files, with dependencies but no version constraints. It's wishes built on wishes. Lock files aren't bureaucracy. They're communication. They say: "This exact combination of code and dependencies worked. Use this." When something breaks, you can diff the lock files and see what changed.
 
-Without lock files, you're not sharing a project—you're sharing a wish. "I hope you get the same versions I had." That's not engineering. That's prayer.
-
-Lock files aren't bureaucracy. They're communication. They say: "This exact combination of code and dependencies worked. Use this." When something breaks, you can diff the lock files and see what changed.
-
-The five minutes you spend setting up proper lock file handling saves days of debugging "it worked yesterday" problems.
+    The five minutes you spend setting up proper lock file handling saves days of debugging "it worked yesterday" problems.
 
 ---
 

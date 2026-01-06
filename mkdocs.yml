@@ -25,7 +25,7 @@ theme:
         name: Switch to light mode
   
   font:
-    text: Lora
+    text: IBM Plex Sans
     code: Fira Code
   
   features:
@@ -46,7 +46,9 @@ theme:
   
   icon:
     repo: fontawesome/brands/github
-  
+
+  logo: assets/images/xram-logo.svg
+
   custom_dir: docs/overrides
 
 # Plugins
@@ -110,6 +112,7 @@ nav:
     - concepts/index.md
     - The True Cost of Free: concepts/true-cost-of-free.md
     - When Scripts Become Software: concepts/scripts-become-software.md
+    - Vibe Coding: concepts/vibe-coding.md
     - Understanding Risk: concepts/understanding-risk.md
     - Evaluating Dependencies: concepts/evaluating-dependencies.md
     - Versioning and Lock Files: concepts/versioning-and-lockfiles.md
@@ -166,6 +169,7 @@ nav:
 # Extra CSS
 extra_css:
   - assets/stylesheets/custom.css
+  - https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap
 
 # Copyright
 copyright: >

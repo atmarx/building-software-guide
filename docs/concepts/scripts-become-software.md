@@ -2,6 +2,9 @@
 
 That "quick script" you wrote last month? It's now critical infrastructure. This chapter addresses the research reality: code written to answer a question becomes code that must be maintained, reproduced, and trusted.
 
+!!! terminal "Famous Last Words"
+    "I just need a quick script." I've heard this sentence precede three years of technical debt more times than I can count. The script works. The script gets used. The script becomes load-bearing. And then the person who wrote it moves on, and everyone discovers that "quick" and "temporary" were lies we told ourselves.
+
 ---
 
 ## The Lifecycle Nobody Planned
@@ -26,6 +29,8 @@ Nobody planned for the script to become critical. But it did. And now it's too i
 
 ## The "Just For Now" Trap
 
+**There's nothing more permanent than a temporary solution.**
+
 Research code is full of "just for now" decisions:
 
 ```python
@@ -46,6 +51,7 @@ Each of these is a small decision that makes sense in the moment. But they accum
 - Magic numbers become impossible to trace
 - Custom imports create hidden dependencies
 - "Works on my machine" becomes "works on nobody else's machine"
+- AI-generated code accepted without review—decisions made by a model that won't remember why
 
 A year later, the script is a maze of assumptions that only make sense if you're the person who wrote it, in the environment where it was written, with the data that existed at the time.
 
@@ -65,11 +71,15 @@ The incentive is publishing, not maintainable code. Time spent on "engineering" 
 
 Result: code gets minimal attention beyond "does it produce the output I need?"
 
+AI-assisted coding amplifies this pressure—it's even easier to prioritize speed when code appears instantly. The time saved feels like a gift; the debt deferred feels like someone else's problem.
+
 ### Solo Development
 
 Most research code is written by one person. There's no code review, no second opinion, no "wait, why did you do it this way?"
 
 Solo developers make consistent mistakes because there's no one to catch them.
+
+AI assistance doesn't change this fundamental problem. The AI isn't a colleague who reviews your code—it's a tool that generates more code for you to not review. You're still alone. You just have a very confident assistant who forgets everything between conversations and doesn't own the decisions it helps you make. See [Vibe Coding](vibe-coding.md) for more on the AI-assisted development trap.
 
 ### Long Gaps Between Uses
 
@@ -212,26 +222,14 @@ Before attaching code to a paper:
 - [ ] Are random seeds set for reproducibility?
 - [ ] Is there a DOI or persistent identifier?
 
-## The Graybeard's Take
+!!! terminal "Tuesday"
+    I've seen too many research projects become archaeological expeditions. A paper from three years ago needs correction. The original code exists, somewhere, but: the grad student who wrote it is now a professor across the country, the server it ran on was decommissioned, the Python version it needs hasn't been available for two years, and half the dependencies have been removed from PyPI.
 
-I've seen too many research projects become archaeological expeditions. A paper from three years ago needs correction. The original code exists, somewhere, but:
+    These aren't hypotheticals. They're Tuesday.
 
-- The grad student who wrote it is now a professor across the country
-- The server it ran on was decommissioned
-- The Python version it needs hasn't been available for two years
-- Half the dependencies have been removed from PyPI
+    The solution isn't to turn every analysis into a software engineering project. That's not realistic, and it's not necessary. The solution is to think, for just a moment, about what happens next. Will someone need to run this again? Pin the dependencies. Will someone need to understand this? Write a README. Will this support a publication? Make it reproducible.
 
-These aren't hypotheticals. They're Tuesday.
-
-The solution isn't to turn every analysis into a software engineering project. That's not realistic, and it's not necessary. The solution is to think, for just a moment, about what happens next.
-
-Will someone need to run this again? Pin the dependencies.
-Will someone need to understand this? Write a README.
-Will this support a publication? Make it reproducible.
-
-These aren't heroic efforts. They're small habits that save enormous pain later.
-
-The best time to think about maintainability was when you started. The second best time is now, before that "quick script" becomes load-bearing infrastructure you can't change.
+    These aren't heroic efforts. They're small habits that save enormous pain later. The best time to think about maintainability was when you started. The second best time is now, before that "quick script" becomes load-bearing infrastructure you can't change.
 
 ---
 

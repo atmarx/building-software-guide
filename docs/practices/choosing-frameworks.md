@@ -2,6 +2,9 @@
 
 Every framework is a bet. You're betting that the maintainers will keep up with security patches, that the community will stick around, and that the abstractions won't paint you into a corner. This chapter is about making better bets.
 
+!!! terminal "I've Chosen Wrong"
+    I've chosen wrong. Repeatedly. The hot framework that's abandoned two years later. The stable choice that couldn't keep up with the ecosystem. The "simple" option that turned out to be simpler than I needed. Choosing frameworks is gambling. The goal isn't to win every time—it's to not bet the whole project on a single hand.
+
 ---
 
 ## The Framework Decision
@@ -240,6 +243,8 @@ Before committing to a framework:
 - [ ] **Team fit:** Does your team know it (or can they learn it)?
 - [ ] **Problem fit:** Does it actually solve your problem well?
 
+**Note on AI suggestions:** If an AI recommended this framework, apply extra scrutiny. AI suggests frameworks based on training data popularity, not current maintenance status or fit for your specific problem. The AI doesn't check GitHub commit history or read the maintainer's burnout posts. It pattern-matches from what was popular when it was trained. Do your own evaluation. See [Vibe Coding](../concepts/vibe-coding.md).
+
 ### The Prototype Test
 
 Don't just evaluate—build something.
@@ -266,19 +271,16 @@ You've chosen a framework. When should you question that choice?
 
 Don't switch frameworks lightly. But don't ignore warning signs either.
 
-## The Graybeard's Take
+!!! terminal "Rise and Fall"
+    I've watched frameworks rise and fall for decades. Some observations:
 
-I've watched frameworks rise and fall for decades. Some observations:
+    **The best framework is the one you don't have to think about.** When you're fighting your framework, you're not solving your actual problem. The goal is a framework that gets out of the way.
 
-**The best framework is the one you don't have to think about.** When you're fighting your framework, you're not solving your actual problem. The goal is a framework that gets out of the way.
+    **Community matters more than features.** A slightly less capable framework with excellent documentation and active maintainers beats a feature-rich framework that's maintained by one burned-out developer.
 
-**Community matters more than features.** A slightly less capable framework with excellent documentation and active maintainers beats a feature-rich framework that's maintained by one burned-out developer.
+    **There's no perfect choice.** Every framework has trade-offs. Pick the trade-offs you can live with, not the framework with the best marketing.
 
-**There's no perfect choice.** Every framework has trade-offs. Pick the trade-offs you can live with, not the framework with the best marketing.
-
-**The skills transfer more than the framework.** Understanding MVC patterns, REST principles, database design—these outlast any specific framework. Invest in fundamentals, not just framework-specific knowledge.
-
-Your project probably doesn't need the hottest new framework. It needs one that works, is maintained, and lets you focus on the actual problem you're trying to solve.
+    **The skills transfer more than the framework.** Understanding MVC patterns, REST principles, database design—these outlast any specific framework. Your project probably doesn't need the hottest new framework. It needs one that works, is maintained, and lets you focus on the actual problem you're trying to solve.
 
 ---
 

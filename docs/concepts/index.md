@@ -4,17 +4,51 @@ Before you can make informed decisions about dependencies and supply chain, you 
 
 ## What's Here
 
-**[The True Cost of Free](true-cost-of-free.md)** — Dependencies aren't free. They cost evaluation time, maintenance effort, security surface area, and upgrade cycles. Understanding these costs helps you make better decisions about what to depend on.
+<div class="grid cards two-column" markdown>
 
-**[When Scripts Become Software](scripts-become-software.md)** — That "quick script" you wrote last month? It's now critical infrastructure. This chapter addresses the research reality: code written to answer a question becomes code that must be maintained, reproduced, and trusted.
+-   :material-currency-usd-off:{ .lg .middle } **[The True Cost of Free](true-cost-of-free.md)**
 
-**[Understanding Risk](understanding-risk.md)** — Every decision in software involves tradeoffs. This chapter introduces risk as a framework for thinking about those tradeoffs—what risks you're accepting, how to assess them, and how to make informed decisions.
+    ---
 
-**[Evaluating Dependencies](evaluating-dependencies.md)** — Before you install anything, you should know what you're getting into. This chapter provides a practical framework for assessing dependencies: who maintains them, how healthy the project is, and what happens if things go wrong.
+    Dependencies aren't free. They cost evaluation time, maintenance effort, security surface area, and upgrade cycles.
 
-**[Versioning and Lock Files](versioning-and-lockfiles.md)** — Version numbers mean something (sometimes). Lock files ensure reproducibility (when you use them). This chapter explains how versioning works, why lock files matter, and how to avoid the common pitfalls.
+-   :material-script-text:{ .lg .middle } **[When Scripts Become Software](scripts-become-software.md)**
 
-**[The Build Environment](build-environment.md)** — "Works on my machine" isn't good enough. This chapter covers containerization, reproducibility, and the fundamentals of build environments—not the specific tools, but the principles that make them work.
+    ---
+
+    That "quick script" you wrote last month? It's now critical infrastructure. Code written to answer a question becomes code that must be maintained.
+
+-   :material-robot:{ .lg .middle } **[Vibe Coding](vibe-coding.md)**
+
+    ---
+
+    When AI writes your code, you inherit dependencies you didn't choose, patterns you don't understand, and risks you can't see.
+
+-   :material-scale-balance:{ .lg .middle } **[Understanding Risk](understanding-risk.md)**
+
+    ---
+
+    Every decision in software involves tradeoffs. Risk as a framework for thinking about what you're accepting.
+
+-   :material-magnify-scan:{ .lg .middle } **[Evaluating Dependencies](evaluating-dependencies.md)**
+
+    ---
+
+    Before you install anything, know what you're getting into. A practical framework for assessing dependencies.
+
+-   :material-lock-check:{ .lg .middle } **[Versioning and Lock Files](versioning-and-lockfiles.md)**
+
+    ---
+
+    Version numbers mean something (sometimes). Lock files ensure reproducibility (when you use them).
+
+-   :material-docker:{ .lg .middle } **[The Build Environment](build-environment.md)**
+
+    ---
+
+    "Works on my machine" isn't good enough. Containerization, reproducibility, and the fundamentals of build environments.
+
+</div>
 
 ## Key Takeaways
 
@@ -24,10 +58,12 @@ If you read nothing else in this section:
 
 2. **Scripts become software** — That "temporary" notebook will outlive your expectations. Plan accordingly.
 
-3. **Risk is unavoidable** — There's no zero-risk option. The goal is informed risk, not no risk.
+3. **AI amplifies, not replaces** — AI-assisted coding makes you faster at whatever you're doing—including making mistakes. Review AI output like a PR from an untrusted contributor.
 
-4. **Evaluate before you install** — Five minutes of assessment can save weeks of pain later.
+4. **Risk is unavoidable** — There's no zero-risk option. The goal is informed risk, not no risk.
 
-5. **Lock files are not optional** — If your builds aren't reproducible, you don't have builds.
+5. **Evaluate before you install** — Five minutes of assessment can save weeks of pain later.
 
-6. **Understand your environment** — If you can't explain what's happening in your build, you don't control it.
+6. **Lock files are not optional** — If your builds aren't reproducible, you don't have builds.
+
+7. **Understand your environment** — If you can't explain what's happening in your build, you don't control it.

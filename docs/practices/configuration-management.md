@@ -2,6 +2,9 @@
 
 Hardcoded values are technical debt. This chapter covers how to externalize configuration, manage environment-specific settings, and avoid the traps that turn configuration into chaos.
 
+!!! terminal "Where Good Intentions Die"
+    Configuration is where good intentions go to die. It starts with one hardcoded value. Then another. Then someone adds an environment variable, and someone else adds a config file, and before you know it you have three incompatible systems and nobody knows which one actually controls the thing.
+
 ---
 
 ## Why Configuration Matters
@@ -405,6 +408,20 @@ if config.enable_email_sending:
 
 The environment name should select which configuration to load. The configuration itself should control behavior.
 
+### AI-Generated Configuration
+
+AI-generated configuration files are particularly prone to anti-patterns:
+
+```python
+# AI-generated configs often have:
+# - Hardcoded paths from the AI's training examples
+# - Default credentials left in place
+# - Assumptions about environment that don't match yours
+# - Copy-pasted patterns without understanding context
+```
+
+When AI generates configuration—Dockerfiles, .env files, CI/CD pipelines—review every value. The AI doesn't know your environment, your security requirements, or your deployment targets. It's pattern-matching from training data, which may include examples with exposed secrets, development defaults in production configs, or outdated patterns. See [Vibe Coding](../concepts/vibe-coding.md) for more.
+
 ## Feature Flags
 
 Feature flags let you enable/disable functionality without deploying new code.
@@ -484,15 +501,12 @@ services:
 
 The same Dockerfile, same database version, same service architecture. Only configuration differs.
 
-## The Graybeard's Take
+!!! terminal "Boring Is Good"
+    I've seen configuration done every possible way. The worst is when configuration is scattered—some in code, some in files, some in environment variables, some in a database, with no clear hierarchy.
 
-I've seen configuration done every possible way. The worst is when configuration is scattered—some in code, some in files, some in environment variables, some in a database, with no clear hierarchy.
+    The best configuration systems are boring. Environment variables for simple cases. Validated, typed configuration objects for complex cases. Clear separation between what's code and what's configuration. Fail-fast on invalid configuration.
 
-The best configuration systems are boring. Environment variables for simple cases. Validated, typed configuration objects for complex cases. Clear separation between what's code and what's configuration. Fail-fast on invalid configuration.
-
-Configuration is one of those things that seems simple until it isn't. A few hardcoded values become dozens, then hundreds. By the time you realize you need a system, you've already built three incompatible half-systems.
-
-Start with a clear pattern. Load configuration in one place. Validate it. Pass it explicitly to the code that needs it. When you need more complexity—feature flags, dynamic config, per-user settings—you'll have a foundation to build on.
+    Configuration is one of those things that seems simple until it isn't. A few hardcoded values become dozens, then hundreds. By the time you realize you need a system, you've already built three incompatible half-systems. Start with a clear pattern. Load configuration in one place. Validate it. Pass it explicitly to the code that needs it.
 
 ---
 

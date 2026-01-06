@@ -2,6 +2,9 @@
 
 Good development practices are force multipliers. They catch bugs before production, make code easier to maintain, and reduce the friction of working with others. This chapter covers the practices that pay dividends.
 
+!!! terminal "Force Multipliers"
+    Code review catches dumb mistakes. Testing catches smart ones. Both are habits, not heroics. The teams I've seen ship quality code aren't doing anything special—they're just doing the basics, consistently. Every time. Until it stops feeling like work.
+
 ---
 
 ## Code Review
@@ -60,6 +63,7 @@ When lock files or dependency manifests change:
 
 - [ ] What dependencies were added? Are they necessary?
 - [ ] What dependencies were updated? Are these intentional?
+- [ ] If AI-suggested: verify the packages exist and the suggestion rationale
 - [ ] Check new dependencies:
   - [ ] Maintainer reputation
   - [ ] Download counts
@@ -70,6 +74,8 @@ When lock files or dependency manifests change:
   - [ ] Read changelogs for breaking changes
   - [ ] Security fixes included?
 ```
+
+**AI-generated code requires extra scrutiny.** AI doesn't evaluate dependencies—it pattern-matches. If dependencies were added during AI-assisted coding, apply the same evaluation criteria you'd use for any dependency. See [Vibe Coding](../concepts/vibe-coding.md) for more on reviewing AI suggestions.
 
 ### Automated Checks
 
@@ -430,15 +436,12 @@ updates:
 
 Automated PRs + good test coverage = updates that can often auto-merge.
 
-## The Graybeard's Take
+!!! terminal "Habits Win"
+    Practices are habits. The teams that test well, test habitually. The teams that review well, review habitually. The teams that struggle treat these as burdens to be avoided.
 
-Practices are habits. The teams that test well, test habitually. The teams that review well, review habitually. The teams that struggle treat these as burdens to be avoided.
+    I've watched teams try to bolt on quality at the end—adding tests before a release, reviewing code right before deployment. It doesn't work. Quality practices work because they're integrated into the daily workflow, not bolted on after.
 
-I've watched teams try to bolt on quality at the end—adding tests before a release, reviewing code right before deployment. It doesn't work. Quality practices work because they're integrated into the daily workflow, not bolted on after.
-
-The specific practices matter less than consistency. A team that always reviews code, even imperfectly, develops better code than a team that sometimes reviews perfectly. A team that always runs tests, even incomplete ones, catches more bugs than a team with a comprehensive test suite that's often skipped.
-
-Start simple. Add practices one at a time. Make them habits before adding more. The goal isn't to follow a checklist—it's to build a culture where quality is automatic.
+    The specific practices matter less than consistency. A team that always reviews code, even imperfectly, develops better code than a team that sometimes reviews perfectly. Start simple. Add practices one at a time. Make them habits before adding more. The goal isn't to follow a checklist—it's to build a culture where quality is automatic.
 
 ---
 

@@ -2,6 +2,9 @@
 
 "Works on my machine" isn't good enough. This chapter covers containerization, reproducibility, and the fundamentals of build environments—not the specific tools, but the principles that make them work.
 
+!!! terminal "Five Hundred Times"
+    "Works on my machine." I've heard this sentence five hundred times. The answer is always the same: the environment is different. And the solution is always the same: stop treating your laptop like it's the canonical build environment. It's not. It never was.
+
 ---
 
 ## "Works on My Machine" Is Not a Build System
@@ -148,6 +151,8 @@ The key insight: **it's still Linux running Linux processes**. There's no hyperv
 **Simplicity:** You've added a layer, not removed complexity. Now you have container problems in addition to application problems.
 
 **Magic:** If you don't understand the Dockerfile, you don't understand your build. The complexity is still there—it's just in a different file.
+
+**Understanding:** AI-generated Dockerfiles are particularly dangerous here. The AI can produce a working Dockerfile without you understanding what it does. You've containerized your confusion. The build works, but you can't debug it when it fails, can't optimize it, can't secure it. See [Vibe Coding](vibe-coding.md) for more on AI as a complexity-hiding tool.
 
 ## Dockerfile Fundamentals
 
@@ -320,17 +325,14 @@ Not everything needs Kubernetes:
 
 The right question isn't "should I use Kubernetes?" It's "what's the simplest thing that solves my actual problem?"
 
-## The Graybeard's Take
+!!! terminal "Not Magic"
+    I've watched containerization go from "weird Linux thing" to "default assumption." That's mostly good—the reproducibility benefits are real.
 
-I've watched containerization go from "weird Linux thing" to "default assumption." That's mostly good—the reproducibility benefits are real.
+    But I've also watched teams adopt containers because it's what you're supposed to do, without understanding what problems containers solve. They end up with all the complexity and none of the benefits.
 
-But I've also watched teams adopt containers because it's what you're supposed to do, without understanding what problems containers solve. They end up with all the complexity and none of the benefits.
+    Containers aren't magic. They're a way to package an environment. If you understand your environment—what versions of what software you need, how they're configured, where the state lives—containers are a convenient way to express that understanding. If you don't understand your environment, containers just hide your confusion in a Dockerfile. The confusion is still there. Now it's just harder to debug.
 
-Containers aren't magic. They're a way to package an environment. If you understand your environment—what versions of what software you need, how they're configured, where the state lives—containers are a convenient way to express that understanding.
-
-If you don't understand your environment, containers just hide your confusion in a Dockerfile. The confusion is still there. Now it's just harder to debug.
-
-Start by understanding what your code needs to run. Document that. Version that. Then decide if containers are the right tool to enforce it.
+    Start by understanding what your code needs to run. Document that. Version that. Then decide if containers are the right tool to enforce it.
 
 ---
 

@@ -2,6 +2,9 @@
 
 Every piece of software you run is built on other software. Libraries, frameworks, tools, runtimes—layers upon layers of code written by people you've never met. This is your software supply chain, and understanding it is the first step to securing it.
 
+!!! terminal "Trust Decisions"
+    Every dependency is a trust decision. Every transitive dependency is a trust decision you didn't know you were making. When someone asks "is this dependency secure?" the honest answer is almost always "I don't know, and neither do you." That's not paranoia. That's reality. The question isn't whether to trust—it's how to trust *thoughtfully*.
+
 ---
 
 ## What "Supply Chain" Means
@@ -73,6 +76,8 @@ When you install a package, you're not just trusting its maintainers. You're tru
 - **The distribution infrastructure** — CDNs, mirrors, proxies
 
 A compromise anywhere in this chain can affect you. The [xz utils](../lessons-learned/xz-utils.md) backdoor was inserted by someone who became a trusted maintainer. The [event-stream](../lessons-learned/event-stream.md) attack happened through a maintainer handoff. [SolarWinds](../lessons-learned/solarwinds.md) was a build system compromise.
+
+When AI suggests dependencies, the trust chain extends further: you're also trusting the AI model's training data, the patterns it learned, and whatever code it was trained on. The AI might suggest a package based on patterns from tutorials, Stack Overflow answers, or codebases that are years out of date—or that were compromised before the training cutoff. See [Vibe Coding](../concepts/vibe-coding.md) for more on AI-introduced supply chain risk.
 
 You can't verify all of this yourself. But you can make informed decisions about what you trust and why.
 
@@ -165,19 +170,14 @@ No single measure secures your supply chain. Effective defense combines multiple
 
 The remaining chapters in this section cover these defenses in detail.
 
-## The Graybeard's Take
+!!! terminal "Three Sentences"
+    I remember when dependency management meant copying `.h` files into your project and hoping the compiler found them. We had supply chain problems then too—we just didn't call them that.
 
-I remember when dependency management meant copying `.h` files into your project and hoping the compiler found them. We had supply chain problems then too—we just didn't call them that.
+    What's changed is scale. When I started, a complex project might have a dozen dependencies. Now a "hello world" web app has hundreds. The attack surface grew faster than our ability to secure it.
 
-What's changed is scale. When I started, a complex project might have a dozen dependencies. Now a "hello world" web app has hundreds. The attack surface grew faster than our ability to secure it.
+    The tools have improved. We have SBOMs, vulnerability scanners, lock files, reproducible builds. But the fundamental problem remains: you're trusting code you haven't read, written by people you don't know, for reasons you don't understand. That's not going to change. Modern software is too complex to write everything yourself.
 
-The tools have improved. We have SBOMs, vulnerability scanners, lock files, reproducible builds. But the fundamental problem remains: you're trusting code you haven't read, written by people you don't know, for reasons you don't understand.
-
-That's not going to change. Modern software is too complex to write everything yourself. The question isn't whether to use dependencies—it's how to use them thoughtfully.
-
-Know what you're running. Understand who maintains it. Have a plan for when things go wrong.
-
-That's supply chain security in three sentences. The rest is details.
+    Know what you're running. Understand who maintains it. Have a plan for when things go wrong. That's supply chain security in three sentences. The rest is details.
 
 ---
 

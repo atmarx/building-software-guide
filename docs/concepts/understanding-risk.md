@@ -2,6 +2,9 @@
 
 Every decision in software involves tradeoffs. Every tradeoff involves risk. This chapter introduces risk as a framework for thinking about those tradeoffs—not to eliminate risk, but to understand it.
 
+!!! terminal "No Safety Net"
+    Every decision I've made in 30+ years of software has involved risk. Every one. The people who think they've found the zero-risk path are just the people who haven't noticed the risks yet. The goal isn't safety—it's *informed* risk-taking.
+
 ---
 
 ## There Is No Zero-Risk Option
@@ -86,7 +89,7 @@ Compromise can happen through:
 
 Using code means accepting its license terms. Some licenses (GPL, AGPL) have copyleft requirements that may not align with your project's needs. Some dependencies bundle other dependencies with different licenses.
 
-For details on licensing, see the [Open Source Licensing Guide](licensing-guide).
+For details on licensing, see the [Open Source Licensing Guide](https://libre.xram.net).
 
 **Mitigation:** License scanning, SBOM analysis, legal review for critical applications.
 
@@ -171,7 +174,9 @@ Common failure modes:
 
 **Invisible risk:** You didn't know the risk existed. (You didn't know log4j was in your stack until log4shell dropped.)
 
-**Unconsidered risk:** You knew the risk existed but didn't think about it. (You copied a Dockerfile from Stack Overflow without reading it.)
+**AI-amplified invisible risk:** AI-assisted coding creates a new category here. The AI added dependencies you never consciously chose, using patterns from training data you can't inspect. See [Vibe Coding](vibe-coding.md) for how AI makes invisible risk even more invisible.
+
+**Unconsidered risk:** You knew the risk existed but didn't think about it. (You copied a Dockerfile from Stack Overflow without reading it. Or you accepted AI-generated code without reviewing what it imports.)
 
 **Dismissed risk:** You considered the risk but decided it was someone else's problem. (The vendor handles security, right?)
 
@@ -179,15 +184,14 @@ Common failure modes:
 
 The goal of this guide is to help you move risks from "invisible" and "unconsidered" into the categories where you're making informed decisions.
 
-## The Graybeard's Take
+!!! terminal "The Invisible"
+    I've watched smart people make bad risk decisions my entire career. Not because they were careless, but because the risks were invisible to them.
 
-I've watched smart people make bad risk decisions my entire career. Not because they were careless, but because the risks were invisible to them.
+    Nobody thinks "I'm accepting maintainer risk" when they pip install a package. They think "this solves my problem." The risk is there whether you think about it or not.
 
-Nobody thinks "I'm accepting maintainer risk" when they pip install a package. They think "this solves my problem." The risk is there whether you think about it or not.
+    What changes with experience isn't that you stop taking risks—you can't. What changes is that you start *seeing* the risks. You notice the single maintainer. You check the last commit date. You look at the dependency tree. You think "if this breaks, what's my plan?"
 
-What changes with experience isn't that you stop taking risks—you can't. What changes is that you start *seeing* the risks. You notice the single maintainer. You check the last commit date. You look at the dependency tree. You think "if this breaks, what's my plan?"
-
-That's what this guide is about. Not eliminating risk—that's impossible. Making it visible, so you can make informed decisions instead of lucky ones.
+    That's what this guide is about. Not eliminating risk—that's impossible. Making it visible, so you can make informed decisions instead of lucky ones.
 
 ---
 

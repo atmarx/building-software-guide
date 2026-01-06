@@ -2,6 +2,9 @@
 
 Research software has unique requirements: reproducibility for scientific integrity, compliance for sensitive data, and often limited time and resources. This appendix translates supply chain concepts for academic and research contexts.
 
+!!! terminal "Different Pressures"
+    Research code has different pressures. You're not a software engineer—you're a domain expert who happens to write code. The timeline is grant-driven, not sprint-driven. "Ship it" means "publish the paper." I get it. But I've also seen papers retracted because the code couldn't be reproduced, and careers damaged by data breaches from scripts that grew beyond their original scope. The investment in getting this right is small compared to those costs.
+
 ---
 
 ## The Research Software Reality
@@ -184,12 +187,15 @@ When data can't leave a secure environment, you may need:
 
 Scripts have a way of becoming critical infrastructure.
 
+AI-assisted coding makes this problem worse. You can generate scripts faster than ever—and with even less scrutiny. The AI produces working code instantly; you run it; it works; you move on. A week later, three colleagues are using it. A month later, it's running in production. You never reviewed what the AI actually wrote, what dependencies it added, or whether those dependencies are maintained. See [Vibe Coding](../concepts/vibe-coding.md) for more on managing AI-generated code.
+
 ### Signs Your Script Is Growing Up
 
 - Multiple people use it
 - It runs in production
 - Results depend on it
 - You can't remember how it works
+- You used AI to write it and never reviewed the full output
 
 ### Minimal Hardening
 
@@ -404,15 +410,8 @@ Some journals require:
 
 Prepare these from the start, not as an afterthought.
 
-## The Graybeard's Take
-
-Research software occupies an awkward middle ground. It's too important to ignore best practices—results must be reproducible, data must be protected. But it's often developed by people whose primary job isn't software development, with timelines that don't include "refactoring week."
-
-The key is finding the minimum viable rigor for your situation. A script that runs once for a class project needs less than code underlying a clinical trial. But even the simplest analysis benefits from basic version control and documented dependencies.
-
-I've seen too many papers retracted or questioned because the code couldn't be reproduced. I've seen careers damaged by data breaches from scripts that grew beyond their original scope. The investment in getting dependencies right, documenting your environment, and protecting sensitive data is small compared to these costs.
-
-Start simple. requirements.txt, git, a README. Add more as your code becomes more important. But start.
+!!! terminal "Minimum Viable Rigor"
+    The key is finding the minimum viable rigor for your situation. A script that runs once for a class project needs less than code underlying a clinical trial. But even the simplest analysis benefits from basic version control and documented dependencies. Start simple: requirements.txt, git, a README. Add more as your code becomes more important. But start.
 
 ---
 

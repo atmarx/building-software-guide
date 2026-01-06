@@ -2,11 +2,16 @@
 
 Before you install anything, you should know what you're getting into. This chapter provides a practical framework for assessing dependencies: who maintains them, how healthy the project is, and what happens if things go wrong.
 
+!!! terminal "Trust, but Verify"
+    I've learned more about a dependency's health in five minutes of GitHub stalking than in hours of reading documentation. Maintainers tell you everything about their project in how they handle issues, how often they release, and whether they respond when things break. You just have to look.
+
 ---
 
 ## Before You Install Anything
 
 The five minutes you spend evaluating a dependency can save weeks of pain. Here's how to spend those five minutes.
+
+**This applies to AI-suggested packages too.** When an AI assistant suggests a dependency, it's not evaluating these criteria—it's pattern-matching from training data. The AI doesn't know if the package is maintained, if it has vulnerabilities, or if it even exists. Apply the same scrutiny to AI suggestions as you would to your own choices. See [Vibe Coding](vibe-coding.md) for more on the risks of AI-suggested dependencies.
 
 ### The Five-Minute Assessment
 
@@ -61,7 +66,7 @@ If installing one package brings in 200 others, that's worth knowing.
 
 **5. What's the license?**
 
-Check for license compatibility with your project. See the [Open Source Licensing Guide](licensing-guide) for details.
+Check for license compatibility with your project. See the [Open Source Licensing Guide](https://libre.xram.net) for details.
 
 ```bash
 # Quick check
@@ -207,6 +212,8 @@ Can you build the package from source and get the same result as the published a
 
 A bus factor of 1 means one person's absence kills the project. This is common—and risky.
 
+AI-generated code has a bus factor of zero. Nobody maintains it, nobody owns the decisions, nobody remembers why it was written that way. The AI that suggested it doesn't remember and can't be held accountable. When AI helps write your code, *you* become the sole maintainer of decisions you may not fully understand.
+
 ### How to Check
 
 Look at the contributor graph:
@@ -319,15 +326,12 @@ For critical dependencies, document why you chose them:
 
 This helps future-you (or your successor) understand the choice.
 
-## The Graybeard's Take
+!!! terminal "Scar Tissue"
+    I've been burned by every category of dependency problem. The unmaintained package that broke with a Python update. The single-maintainer project that disappeared. The heavily-adopted framework that made a breaking change.
 
-I've been burned by every category of dependency problem. The unmaintained package that broke with a Python update. The single-maintainer project that disappeared. The heavily-adopted framework that made a breaking change.
+    After enough burns, you develop instincts. A certain skepticism. Not paranoia—I still use dependencies constantly. But I check. I spend the five minutes.
 
-After enough burns, you develop instincts. A certain skepticism. Not paranoia—I still use dependencies constantly. But I check. I spend the five minutes.
-
-The developers who avoid the worst outcomes aren't necessarily smarter. They're just more careful. They look at the contributor graph. They read the issues. They think about what happens when, not if, something goes wrong.
-
-Five minutes of evaluation. That's all it takes. And it's five minutes you'll never regret.
+    The developers who avoid the worst outcomes aren't necessarily smarter. They're just more careful. They look at the contributor graph. They read the issues. They think about what happens when, not if, something goes wrong. Five minutes of evaluation. That's all it takes. And it's five minutes you'll never regret.
 
 ---
 

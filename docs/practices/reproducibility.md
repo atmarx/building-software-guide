@@ -2,6 +2,9 @@
 
 "It worked yesterday" is not a debugging strategy. Reproducibility means getting the same results from the same inputs—today, tomorrow, and five years from now. This chapter covers how to achieve it.
 
+!!! terminal "Yesterday's Excuse"
+    "It worked yesterday" tells you nothing except that something changed. Reproducibility is about eliminating the changes you didn't notice—the floating dependency, the environment variable, the system library that updated overnight. When you control everything, "it worked yesterday" becomes "it will work tomorrow."
+
 ---
 
 ## What Reproducibility Means
@@ -30,6 +33,12 @@ pandas>=2.0
 ```
 
 Without pinned versions, you're not specifying what you depend on—you're making a wish.
+
+### AI-Generated Code
+
+AI-assisted development introduces a new source of non-reproducibility: the same prompt doesn't produce the same code. Ask an AI for a solution today, you get one implementation. Ask tomorrow, you might get a different one—different dependencies, different patterns, different behavior.
+
+If your code was AI-generated, you have no guarantee that regenerating it produces equivalent results. The AI's training data, model version, and even the exact phrasing of your prompt can change outputs. **Treat AI-generated code as a one-time artifact**: freeze it, test it, version it. See [Vibe Coding](../concepts/vibe-coding.md) for more on managing AI-generated code.
 
 **Fix: Lock files.**
 
@@ -438,13 +447,12 @@ date-released: 2024-01-15
 url: "https://github.com/user/project"
 ```
 
-## The Graybeard's Take
+!!! terminal "Future You"
+    I've seen too many projects where "reproducing the results" required the original author's machine, because only that machine had the exact right combination of dependencies, system libraries, and environment quirks.
 
-I've seen too many projects where "reproducing the results" required the original author's machine, because only that machine had the exact right combination of dependencies, system libraries, and environment quirks.
+    Reproducibility isn't just about scientific integrity—though that matters. It's about being able to debug your own work six months from now. It's about onboarding new team members without a week of "it works on my machine" conversations. It's about not rebuilding your environment from scratch every time you get a new laptop.
 
-Reproducibility isn't just about scientific integrity—though that matters. It's about being able to debug your own work six months from now. It's about onboarding new team members without a week of "it works on my machine" conversations. It's about not rebuilding your environment from scratch every time you get a new laptop.
-
-The effort you put into reproducibility pays for itself. Lock your dependencies. Document your environment. Seed your randomness. Your future self will thank you—and so will everyone who tries to build on your work.
+    The effort you put into reproducibility pays for itself. Lock your dependencies. Document your environment. Seed your randomness. Your future self will thank you—and so will everyone who tries to build on your work.
 
 ---
 

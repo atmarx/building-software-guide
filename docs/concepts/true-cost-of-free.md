@@ -2,6 +2,9 @@
 
 That library you just installed? It's not free. It costs evaluation time, maintenance effort, security surface area, and upgrade cycles. Understanding these costs helps you make better decisions about what to depend on.
 
+!!! terminal "There's No Such Thing"
+    I've watched developers treat `pip install` like it's free. Two seconds, zero thought, problem solved. Then I've watched those same developers spend three days debugging a version conflict, two weeks migrating off an abandoned package, or one very bad weekend cleaning up after a compromised dependency. The install was free. Everything after wasn't.
+
 ---
 
 ## Nothing Is Free
@@ -36,6 +39,8 @@ pip install awesome-library
 The friction that used to exist—finding source code, compiling it, resolving conflicts manually—was annoying, but it forced you to think. Is this worth the effort? Do I really need this?
 
 Now the question isn't whether to add a dependency. It's whether you can justify *not* adding one. "There's a package for that" becomes the default answer to every problem.
+
+AI-assisted coding removes even this minimal friction. You might not even see the import statement being added. You prompt for a solution; code appears; dependencies accumulate. The [Vibe Coding](vibe-coding.md) chapter explores this new reality where you don't even consciously choose to `pip install`—the AI does it for you, and you may not notice until something breaks.
 
 ## Technical Debt as Compound Interest
 
@@ -110,11 +115,13 @@ your-analysis-script
 
 You chose four packages. You got forty. Each one is code running with your privileges, maintained by someone you've never met.
 
+With AI-assisted development, you might not even have consciously chosen those four. The AI suggested them; you accepted. You inherited the entire tree without ever making explicit decisions about the roots. See [Vibe Coding](vibe-coding.md) for how AI makes this invisible accumulation even more insidious.
+
 ### Why This Matters
 
 **Security:** A vulnerability in any transitive dependency is your vulnerability. When [log4shell](../lessons-learned/log4shell.md) hit, most affected organizations had never directly installed log4j—it came in through something else.
 
-**Licensing:** Each package has a license. Some licenses have requirements that flow through to your project. (See the [Open Source Licensing Guide](licensing-guide) for details.)
+**Licensing:** Each package has a license. Some licenses have requirements that flow through to your project. (See the [Open Source Licensing Guide](https://libre.xram.net) for details.)
 
 **Stability:** More dependencies means more things that can break, update unexpectedly, or conflict with each other.
 
@@ -208,15 +215,14 @@ Before adding a dependency, ask:
 
 If you can't answer these questions, you're not making an informed decision. You're hoping for the best.
 
-## The Graybeard's Take
+!!! terminal "Same Story, Different Decade"
+    I've watched the same cycle for decades. New platform emerges. Developers discover they can easily share code. Package manager makes it frictionless. Everyone shares everything. Dependency counts explode. Eventually something breaks—an abandoned package, a security incident, a licensing dispute—and everyone acts surprised.
 
-I've watched the same cycle for decades. New platform emerges. Developers discover they can easily share code. Package manager makes it frictionless. Everyone shares everything. Dependency counts explode. Eventually something breaks—an abandoned package, a security incident, a licensing dispute—and everyone acts surprised.
+    The tools change. The pattern doesn't.
 
-The tools change. The pattern doesn't.
+    Dependencies aren't bad. I use them constantly. But I've learned to treat them as decisions, not freebies. Every package I add is code I'm responsible for, whether I wrote it or not. Every package is complexity I'm carrying, vulnerabilities I'm exposed to, maintenance I'm deferring.
 
-Dependencies aren't bad. I use them constantly. But I've learned to treat them as decisions, not freebies. Every package I add is code I'm responsible for, whether I wrote it or not. Every package is complexity I'm carrying, vulnerabilities I'm exposed to, maintenance I'm deferring.
-
-The question isn't whether to use dependencies. It's whether to use them *thoughtlessly*. The developers who avoid the worst outcomes are the ones who pause, for just a moment, before typing `install`.
+    The question isn't whether to use dependencies. It's whether to use them *thoughtlessly*. The developers who avoid the worst outcomes are the ones who pause, for just a moment, before typing `install`.
 
 ---
 
