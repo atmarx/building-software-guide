@@ -30,6 +30,19 @@
   grid-template-columns: repeat(2, 1fr);
 }
 
+/* Red flag icons for warning lists */
+.md-typeset .red-flag {
+  color: #ff4444;
+}
+[data-md-color-scheme="slate"] .md-typeset .red-flag {
+  color: #ff6666;
+}
+/* Hide bullet for red flag list items (like checkbox items) */
+.md-typeset ul li:has(.red-flag) {
+  list-style: none;
+  margin-left:0em;
+}
+
 @media screen and (max-width: 600px) {
   .md-typeset .grid.cards.two-column {
     grid-template-columns: 1fr;

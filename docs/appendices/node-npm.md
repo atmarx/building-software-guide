@@ -230,10 +230,11 @@ npm audit package-name
 ```
 
 **Red flags:**
-- Very few downloads
-- No repository link
-- Recent ownership change
-- Name similar to popular package (typosquatting)
+
+- :material-close-circle:{ .red-flag } Very few downloads
+- :material-close-circle:{ .red-flag } No repository link
+- :material-close-circle:{ .red-flag } Recent ownership change
+- :material-close-circle:{ .red-flag } Name similar to popular package (typosquatting)
 
 ## Alternative Package Managers
 

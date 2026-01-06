@@ -77,10 +77,11 @@ How does the project handle security?
 - Responsible disclosure process exists
 
 **Red flags:**
-- Known vulnerabilities unfixed for months
-- Security issues dismissed or ignored
-- No clear process for reporting vulnerabilities
-- Maintainers hostile to security researchers
+
+- :material-close-circle:{ .red-flag } Known vulnerabilities unfixed for months
+- :material-close-circle:{ .red-flag } Security issues dismissed or ignored
+- :material-close-circle:{ .red-flag } No clear process for reporting vulnerabilities
+- :material-close-circle:{ .red-flag } Maintainers hostile to security researchers
 
 **Research the history:**
 

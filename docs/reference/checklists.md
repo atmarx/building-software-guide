@@ -23,12 +23,12 @@ Before adding a new dependency to your project:
 
 Stop and reconsider if you see:
 
-- Single maintainer with no succession plan
-- Last commit over 1 year ago (for active problem domains)
-- Hundreds of open issues with no responses
-- No clear versioning strategy
-- Minified or obfuscated source in repository
-- Excessive permissions requested
+- :material-close-circle:{ .red-flag } Single maintainer with no succession plan
+- :material-close-circle:{ .red-flag } Last commit over 1 year ago (for active problem domains)
+- :material-close-circle:{ .red-flag } Hundreds of open issues with no responses
+- :material-close-circle:{ .red-flag } No clear versioning strategy
+- :material-close-circle:{ .red-flag } Minified or obfuscated source in repository
+- :material-close-circle:{ .red-flag } Excessive permissions requested
 
 ---
 

@@ -263,13 +263,13 @@ Future you (or your replacement) will thank present you for the context.
 
 ### Warning Signs in AI Output
 
-- Package names you've never heard of (might be hallucinated)
-- Overly complex solutions to simple problems
-- Dependencies where stdlib would suffice
-- Patterns that don't match your codebase style
-- No error handling
-- No input validation
-- "This should work" comments
+- :material-close-circle:{ .red-flag } Package names you've never heard of (might be hallucinated)
+- :material-close-circle:{ .red-flag } Overly complex solutions to simple problems
+- :material-close-circle:{ .red-flag } Dependencies where stdlib would suffice
+- :material-close-circle:{ .red-flag } Patterns that don't match your codebase style
+- :material-close-circle:{ .red-flag } No error handling
+- :material-close-circle:{ .red-flag } No input validation
+- :material-close-circle:{ .red-flag } "This should work" comments
 
 ### Questions to Ask About AI Suggestions
 

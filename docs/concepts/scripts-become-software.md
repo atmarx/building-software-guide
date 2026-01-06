@@ -246,8 +246,8 @@ Before attaching code to a paper:
 
 ### Warning Signs
 
-- "It works on my machine" (and only there)
-- Hardcoded paths to specific directories
-- No requirements file or lock file
-- No README or setup instructions
-- "I'll clean this up later" (you won't)
+- :material-close-circle:{ .red-flag } "It works on my machine" (and only there)
+- :material-close-circle:{ .red-flag } Hardcoded paths to specific directories
+- :material-close-circle:{ .red-flag } No requirements file or lock file
+- :material-close-circle:{ .red-flag } No README or setup instructions
+- :material-close-circle:{ .red-flag } "I'll clean this up later" (you won't)
