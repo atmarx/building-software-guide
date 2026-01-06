@@ -90,7 +90,7 @@
   width: 100%;
   height: auto;
   display: block;
-  max-height: 400px;
+  max-height: 500px;
   object-fit: cover;
   object-position: center;
 }
@@ -130,7 +130,7 @@
 
 /* Half-height hero for section pages */
 .hero-half img {
-  max-height: 300px;
+  max-height: 400px;
 }
 
 .hero-half .hero-overlay {
