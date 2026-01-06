@@ -2,7 +2,7 @@
 
 ## About the Voice
 
-If you've read the Preface, you've met the narrator—a grizzled veteran who watched build systems and dependency management evolve from nothing into the sprawling ecosystems we have today. That voice is a deliberate choice.
+If you've read any of the pages on this site already, you've met the narrator—[a grizzled veteran who watched build systems and dependency management evolve](./preface.md) from nothing into the sprawling ecosystems we have today. That voice is a deliberate choice.
 
 I wanted this guide to feel like getting advice from someone who'd seen it all. Not a textbook, not a vendor whitepaper, but the kind of practical wisdom you'd get from a mentor who's been around long enough to know where the bodies are buried. The voice is a composite—part oral history, part lived experience, and part "the tone I wish someone had used when explaining this stuff to me."
 
@@ -10,13 +10,13 @@ The incidents are real. The lessons are real. The "*I've seen this before*" fram
 
 ## About Me
 
-My name's Andrew, and I wrote my first code when I was still had single-digit birthdays—a batch script that let you choose from different fart sounds I had recorded, which I promptly uploaded to my local BBS's files section to share. I was *very* proud.
+My name's [Andrew](https://xram.net/), and I wrote my first code when I was still had single-digit birthdays—a batch script that let you choose from different fart sounds I had recorded, which I promptly uploaded to my local BBS's files section to share. I was *very* proud.
 
-By sixth grade, I'd graduated to QuickBASIC, where I wrote a program to brute-force a math problem I didn't yet have the tools to solve. I looped through every possible value until I found the answer. It worked. Months later, I learned the same problem was trivial with algebra. I'd reinvented the wheel—badly—because I didn't know the wheel existed.
+By sixth grade, I'd graduated to QuickBASIC, where I wrote a program to brute-force a math problem by looping through every possible value until I found the answer. It worked. My teacher, impressed, said: you're going to *love* algebra. I'd reinvented the wheel—badly—because I didn't know the wheel existed.
 
 That pattern would repeat.
 
-In high school, I built websites with Classic ASP and Access databases, because that's what I could figure out. Eventually I discovered .NET and "real" databases, and I looked back at my earlier work with a mix of horror and fondness. The code was terrible. But it worked, and I learned.
+In high school, I built websites with classic ASP (before it *was* classic) and Access databases, because that's what I could figure out. Eventually I discovered .NET and real SQL servers, and I looked back at my earlier work with a mix of horror and fondness. The code was terrible. But it worked, and I learned.
 
 I read books like [*Where Wizards Stay Up Late*](https://www.simonandschuster.com/books/Where-Wizards-Stay-Up-Late/Katie-Hafner/9780684832678) and wanted to start my own ISP. I maintained pieces of my high school's website while the browser wars raged (*"it's fine in Navigator, but why does it look so bad in IE4?"*). I watched the foundational shifts in how software was built and shared, seeing the names and players without always understanding the bigger picture.
 
