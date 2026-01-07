@@ -80,9 +80,9 @@
 /* Hero section for homepage */
 .hero {
   position: relative;
-  margin: -1rem -1rem 2rem -1rem;
+  margin: 0 0 2rem;
   padding: 0;
-  border-radius: 0 0 0.5rem 0.5rem;
+  border-radius: 0.5rem;
   overflow: hidden;
 }
 
@@ -93,9 +93,12 @@
   max-height: 500px;
   object-fit: cover;
   object-position: center;
-  border-radius: 0.5rem 0.5rem 0 0;
 }
 
+.hero > p {
+  margin:0;
+  padding:0;
+}
 
 .hero-overlay {
   position: absolute;
@@ -138,7 +141,6 @@
 .hero-half .hero-overlay {
   padding: 1rem 2rem;
 }
-
 
 /* Dark mode adjustments */
 [data-md-color-scheme="slate"] .hero-overlay {
