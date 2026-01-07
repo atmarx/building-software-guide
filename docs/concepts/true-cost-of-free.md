@@ -185,6 +185,11 @@ Use a library when:
 | Maintenance burden | One-time | Ongoing |
 | Bus factor | Only you need it | Others depend on it |
 
+!!! note inline end "It's Not Just Code"
+    Dependencies aren't just packages. Images, fonts, datasets, and documentation all come with licenses—and all carry hidden costs. That Creative Commons image you grabbed? Check the license. That Stack Overflow snippet? It's CC BY-SA, which has attribution requirements. The same thinking applies: *what are you pulling in, and what obligations come with it?*
+
+    For the licensing details, see the [Open Source Licensing Guide](https://libre.xram.net).
+
 ## "But I Don't Want to Maintain That Code"
 
 A common objection: "If I write it myself, I have to maintain it. If I use a library, someone else maintains it."
