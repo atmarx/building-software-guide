@@ -100,7 +100,7 @@ markdown_extensions:
   - pymdownx.tilde
   - pymdownx.snippets:
       auto_append:
-        - includes/glossary.md
+        - docs/includes/glossary.md
 
 # Navigation
 nav:
