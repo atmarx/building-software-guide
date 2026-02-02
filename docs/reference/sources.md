@@ -98,6 +98,11 @@ https://csrc.nist.gov/publications/detail/sp/800-218/final
 NIST. "National Vulnerability Database."
 https://nvd.nist.gov/
 
+### Notepad++ Update Infrastructure Compromise {#notepadplusplus}
+
+"Notepad++ Update System Compromised, Users Redirected to Malicious Servers." Cyber Security News. January 2026.
+https://cybersecuritynews.com/notepad-hijacked/
+
 ## O
 
 ### OpenSSF Scorecard {#openssf-scorecard}

@@ -64,6 +64,12 @@ Critical security incidents that demonstrated the stakes.
 
     Attackers compromised a build system, inserting malware into legitimate updates. 18,000 organizations affected. *Lesson: build systems are high-value targets.*
 
+-   :material-update:{ .lg .middle } **[Notepad++](notepadplusplus.md)** (2025)
+
+    ---
+
+    Update infrastructure hijacked for six months, selectively redirecting targeted users to malicious binaries. *Lesson: update mechanisms are attack surface.*
+
 </div>
 
 ## Ongoing Threats

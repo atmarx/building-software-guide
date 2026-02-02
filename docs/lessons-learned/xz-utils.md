@@ -62,7 +62,7 @@ The xz incident intensified conversations that log4shell had started:
 
 **Maintainer vetting is hard.** How do you verify that a helpful contributor is who they claim to be? Jia Tan had years of legitimate contributions. The account passed every heuristic for trustworthiness. The industry still lacks good answers.
 
-**Build system security matters.** The backdoor targeted release artifacts, not source code. This highlighted the gap between "auditing the source" and "securing the build."
+**[Build system security](../concepts/build-environment.md) matters.** The backdoor targeted release artifacts, not source code. This highlighted the gap between "auditing the source" and "securing the build."
 
 **Binary blobs in test data are risky.** The malicious payload was hidden in what appeared to be test fixture files. This has renewed scrutiny of non-source-code files in repositories.
 

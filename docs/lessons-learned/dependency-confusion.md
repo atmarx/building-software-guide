@@ -80,6 +80,8 @@ The attack works differently across package managers:
 
 ## Prevention
 
+See also: [Security Practices](../security/security-practices.md) for broader supply chain defense strategies.
+
 ### Use scoped/namespaced packages
 
 **npm:** Use organization scopes: `@mycompany/package-name`

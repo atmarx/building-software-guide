@@ -54,9 +54,9 @@ npm changed its unpublish policy within hours of the incident.[^npm-unpublish-po
 
 The incident also sparked conversations about:
 
-- **Dependency hygiene** — Do you really need a package for 11 lines of code?
-- **Vendoring and caching** — Should your builds depend on external registries being available?
-- **Lock files** — At least know *which* versions you depend on, so you can debug when things break.
+- **[Dependency hygiene](../concepts/evaluating-dependencies.md)** — Do you really need a package for 11 lines of code?
+- **[Vendoring and caching](../practices/reproducibility.md)** — Should your builds depend on external registries being available?
+- **[Lock files](../concepts/versioning-and-lockfiles.md)** — At least know *which* versions you depend on, so you can debug when things break.
 
 !!! terminal "Eleven Lines"
     I've watched this pattern before. Not with npm specifically—the ecosystem didn't exist when I started—but the dynamic is old.

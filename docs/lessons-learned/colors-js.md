@@ -59,7 +59,7 @@ None of these questions have clean answers.
 
 The colors.js incident accelerated several trends:
 
-**Pin your dependencies.** The advice had always been there, but it gained urgency. If you're not controlling which versions flow into your builds, you're trusting every maintainer in your dependency tree to behave responsibly, forever.
+**[Pin your dependencies.](../concepts/versioning-and-lockfiles.md)** The advice had always been there, but it gained urgency. If you're not controlling which versions flow into your builds, you're trusting every maintainer in your dependency tree to behave responsibly, forever.
 
 **Discussions about funding intensified.** GitHub Sponsors, Open Collective, and Tidelift saw increased interest. Companies started (slowly) recognizing that free-riding on open source has costs.
 

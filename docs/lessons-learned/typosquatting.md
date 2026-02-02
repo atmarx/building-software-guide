@@ -67,7 +67,7 @@ These help but aren't comprehensive. Registries see millions of packages and can
 
 **Verify package names carefully.** Before installing, double-check spelling—especially for packages you install infrequently.
 
-**Use lock files.** Once you've installed the correct packages, lock files prevent typos from affecting future installs.
+**[Use lock files.](../concepts/versioning-and-lockfiles.md)** Once you've installed the correct packages, lock files prevent typos from affecting future installs.
 
 **Install from requirements files.** Maintain reviewed lists of dependencies rather than typing names from memory.
 

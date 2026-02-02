@@ -47,9 +47,9 @@ The uncomfortable answer is that you can't, entirely. Open source maintainer tra
 
 What you *can* do is:
 
-- **Pin dependencies** so malicious updates don't automatically flow into your builds
+- **[Pin dependencies](../concepts/versioning-and-lockfiles.md)** so malicious updates don't automatically flow into your builds
 - **Review lock file changes** to notice when new transitive dependencies appear
-- **Use SBOMs and scanning** to know what you're running
+- **[Use SBOMs and scanning](../security/sbom.md)** to know what you're running
 - **Monitor for anomalous behavior** in your applications
 
 ## What Changed

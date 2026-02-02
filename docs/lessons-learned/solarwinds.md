@@ -65,9 +65,9 @@ SolarWinds accelerated supply chain security from a niche concern to a mainstrea
 
 **SLSA framework development.** Google and others accelerated work on SLSA (Supply-chain Levels for Software Artifacts), a framework for verifying software supply chain integrity beyond just code signing.[^slsa]
 
-**Build system hardening.** Organizations began treating build infrastructure as high-value targets requiring the same protection as production systems. Air-gapped builds, immutable build environments, and reproducible builds gained attention.
+**[Build system hardening.](../concepts/build-environment.md)** Organizations began treating build infrastructure as high-value targets requiring the same protection as production systems. Air-gapped builds, immutable build environments, and reproducible builds gained attention.
 
-**SBOM requirements.** Executive Order 14028 mandated SBOM requirements for software sold to the federal government, creating regulatory pressure for supply chain transparency.[^eo-14028]
+**[SBOM requirements.](../security/sbom.md)** Executive Order 14028 mandated SBOM requirements for software sold to the federal government, creating regulatory pressure for supply chain transparency.[^eo-14028]
 
 **Zero trust architecture.** The assumption that signed software from trusted vendors is safe was directly challenged. Organizations began implementing zero trust principles that don't assume any source is inherently trustworthy.
 

@@ -49,9 +49,9 @@ Organizations without those practices scrambled for weeks. Some never fully answ
 
 Log4shell became a forcing function for supply chain security investment:
 
-**SBOMs gained urgency.** The U.S. Executive Order 14028, signed in May 2021, had already mandated SBOM requirements for software sold to the federal government.[^eo-14028] Log4shell demonstrated why. If you can't inventory your components, you can't respond to vulnerabilities.
+**[SBOMs](../security/sbom.md) gained urgency.** The U.S. Executive Order 14028, signed in May 2021, had already mandated SBOM requirements for software sold to the federal government.[^eo-14028] Log4shell demonstrated why. If you can't inventory your components, you can't respond to vulnerabilities.
 
-**Dependency scanning became essential.** Tools like Dependabot, Snyk, and Grype saw massive adoption increases. The question shifted from "should we scan dependencies?" to "how fast can we scan?"
+**[Dependency scanning](../security/vulnerability-management.md) became essential.** Tools like Dependabot, Snyk, and Grype saw massive adoption increases. The question shifted from "should we scan dependencies?" to "how fast can we scan?"
 
 **The OpenSSF got funding.** The Open Source Security Foundation, which coordinates security improvements for critical open source projects, received $150 million in commitments from major tech companies in the wake of log4shell.[^openssf-funding] Suddenly, "who maintains this critical infrastructure?" became a boardroom question.
 
