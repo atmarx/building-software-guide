@@ -33,6 +33,12 @@ Before you can make informed decisions about dependencies and supply chain, you 
 
     When AI writes your code, you inherit dependencies you didn't choose, patterns you don't understand, and risks you can't see.
 
+-   :material-saw-blade:{ .lg .middle } **[Power Tools](power-tools.md)**
+
+    ---
+
+    You're not vibe coding—you know what you're doing. But AI as a power tool carries its own risks. Expertise doesn't protect you when you're not the one holding the tool.
+
 -   :material-scale-balance:{ .lg .middle } **[Understanding Risk](understanding-risk.md)**
 
     ---
@@ -69,10 +75,12 @@ If you read nothing else in this section:
 
 3. **AI amplifies, not replaces** — AI-assisted coding makes you faster at whatever you're doing—including making mistakes. Review AI output like a PR from an untrusted contributor.
 
-4. **Risk is unavoidable** — There's no zero-risk option. The goal is informed risk, not no risk.
+4. **Expertise doesn't grant immunity** — Experienced developers are more vulnerable to approval errors, not less. Respect the power tool.
 
-5. **Evaluate before you install** — Five minutes of assessment can save weeks of pain later.
+5. **Risk is unavoidable** — There's no zero-risk option. The goal is informed risk, not no risk.
 
-6. **Lock files are not optional** — If your builds aren't reproducible, you don't have builds.
+6. **Evaluate before you install** — Five minutes of assessment can save weeks of pain later.
 
-7. **Understand your environment** — If you can't explain what's happening in your build, you don't control it.
+7. **Lock files are not optional** — If your builds aren't reproducible, you don't have builds.
+
+8. **Understand your environment** — If you can't explain what's happening in your build, you don't control it.

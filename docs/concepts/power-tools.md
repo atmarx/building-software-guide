@@ -2,7 +2,12 @@
 title: Power Tools
 ---
 
-# Power Tools
+<div class="hero hero-half" markdown>
+  <img src="../assets/images/power-tools.webp" alt="Power tools in a workshop">
+  <div class="hero-overlay">
+    <h1>Power Tools</h1>
+  </div>
+</div>
 
 You're not vibe coding. You know what you're doing. You've been writing code for years, you understand the problem domain, and you're using AI to work faster—not to think for you. The AI is a power tool, not a crutch.
 
