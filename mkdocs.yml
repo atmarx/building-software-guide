@@ -113,6 +113,7 @@ nav:
     - The True Cost of Free: concepts/true-cost-of-free.md
     - When Scripts Become Software: concepts/scripts-become-software.md
     - Vibe Coding: concepts/vibe-coding.md
+    - Power Tools: concepts/power-tools.md
     - Understanding Risk: concepts/understanding-risk.md
     - Evaluating Dependencies: concepts/evaluating-dependencies.md
     - Versioning and Lock Files: concepts/versioning-and-lockfiles.md
@@ -145,6 +146,7 @@ nav:
       - log4shell: lessons-learned/log4shell.md
       - xz utils: lessons-learned/xz-utils.md
       - SolarWinds: lessons-learned/solarwinds.md
+      - Notepad++: lessons-learned/notepadplusplus.md
     - Ongoing Threats:
       - Typosquatting: lessons-learned/typosquatting.md
       - Dependency Confusion: lessons-learned/dependency-confusion.md
