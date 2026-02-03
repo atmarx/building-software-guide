@@ -3,7 +3,7 @@ title: Power Tools
 ---
 
 <div class="hero hero-half" markdown>
-  <img src="../assets/images/power-tools.webp" alt="Power tools in a workshop">
+  <img src="../../assets/images/power-tools.webp" alt="Power tools in a workshop">
   <div class="hero-overlay">
     <h1>Power Tools</h1>
   </div>
